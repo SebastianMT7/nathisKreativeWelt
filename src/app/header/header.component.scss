@@ -1,0 +1,123 @@
+@import "../../styles.scss";
+
+header {
+    @include dFlex($jc: space-between);
+    padding: 20px 100px;
+    //background-color: $darkBlue;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 20px;
+}
+
+.dropdown-container {
+    @include dFlex($gap: 20px);
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 20px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    padding: 10px;
+    //background-color: $middleBlue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+
+    &:hover {
+        //background-color: $darkBlue;
+    }
+}
+
+.dropdown-menu {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: 1px solid $middleBlue;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+/* NAVIGATION */
+nav {
+    width: 80%;
+    background: #fff;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}

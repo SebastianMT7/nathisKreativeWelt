@@ -1,1 +1,63 @@
-<p>header works!</p>
+<header>
+    <div>
+        <img class="logo" src="/assets/img/logo.jpg" alt="">
+    </div>
+    <div class="dropdown-container">
+        <div class="dropdown">
+            <nav class="stroke">
+            <ul>
+                <li (click)="openDropdown(1)" class="dropdown-button">
+                    <a href="#">Kerzen</a>
+                </li>
+            </ul>
+        </nav>
+            <!-- <button (click)="openDropdown(1)" class="dropdown-button">
+                <a href="#">Kerzen</a>
+            </button> -->
+            <ul *ngIf="dropdownOpen[1]" class="dropdown-menu">
+                <li (click)="closeDropdowns()">Standkerzen</li>
+                <li (click)="closeDropdowns()">Becherkerzen</li>
+                <li (click)="closeDropdowns()">Personalisierungen</li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button (click)="openDropdown(2)" class="dropdown-button">Epoxidharz
+            </button>
+            <ul *ngIf="dropdownOpen[2]" class="dropdown-menu">
+                <li (click)="closeDropdowns()">Figuren</li>
+                <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
+                <li (click)="closeDropdowns()">Uhren</li>
+                <li (click)="closeDropdowns()">Sonstiges</li>
+                <li (click)="closeDropdowns()">Personalisierungen</li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button (click)="openDropdown(3)" class="dropdown-button">Keramik
+            </button>
+            <ul *ngIf="dropdownOpen[3]" class="dropdown-menu">
+                <li (click)="closeDropdowns()">Teelichthalter/Döschen</li>
+                <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
+                <li (click)="closeDropdowns()">Sonstiges</li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button (click)="openDropdown(4)" class="dropdown-button">Saison
+            </button>
+            <ul *ngIf="dropdownOpen[4]" class="dropdown-menu">
+                <li (click)="closeDropdowns()">Valentinstag</li>
+                <li (click)="closeDropdowns()">Ostern</li>
+                <li (click)="closeDropdowns()">Frühling</li>
+                <li (click)="closeDropdowns()">Sommer</li>
+                <li (click)="closeDropdowns()">Herbst</li>
+                <li (click)="closeDropdowns()">Winter</li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<nav class="stroke">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>

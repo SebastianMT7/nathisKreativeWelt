@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+// @import "./fonts.scss";
+
+$darkestBlue: #012E4B;
+$darkBlue: #036280;
+$middleBlue: #378BA5;
+$lightBlue: #81BFCE;
+$white: #E8EDE7;
+
+@mixin dFlex($jc: center, $ai: center, $fd: row, $gap: 0) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
