@@ -50,16 +50,17 @@ header {
 
 .dropdown-menu li {
     padding: 5px 10px;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 16px;
+    width: auto;
 
     &:hover {
         color: $middleBlue;
     }
 }
-
-
 
 
 /* NAVIGATION */
@@ -74,12 +75,12 @@ nav div {
 
 nav div a {
     display: block;
-    padding: 15px;
+    padding: 5px 15px;
     text-decoration: none;
     color: $lightBlue;
     font-weight: 800;
     text-transform: uppercase;
-    margin: 0 10px;
+    //margin: 0 10px;
 }
 
 nav div a,

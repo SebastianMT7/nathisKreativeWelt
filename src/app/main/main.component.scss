@@ -1,11 +1,21 @@
+@import "../../styles.scss";
+
 .hero {
     width: 100%;
     height: 400px;
-    aspect-ratio:  16 / 9;
+    aspect-ratio: 16 / 9;
 
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;        
+        object-fit: cover;
     }
+}
+
+section {
+    @include dFlex($ai: initial,$jc: initial, $gap: 30px);
+    //display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 50px;
 }
