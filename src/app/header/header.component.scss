@@ -2,21 +2,19 @@
 
 header {
     @include dFlex($jc: space-between);
-    padding: 20px 100px;
+    padding: 20px 50px;
     //background-color: $darkBlue;
 }
 
 .logo {
-    width: 100px;
+    width: 70px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .dropdown-container {
     @include dFlex($gap: 20px);
-    // display: flex;
     // flex-wrap: wrap;
-    // gap: 20px;
-
 }
 
 .dropdown {
@@ -25,12 +23,12 @@ header {
 }
 
 .dropdown-button {
-    padding: 10px;
+    //padding: 10px;
     //background-color: $middleBlue;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
 
     &:hover {
         //background-color: $darkBlue;
@@ -44,22 +42,22 @@ header {
     left: 0;
     list-style: none;
     padding: 0;
-    margin: 0;
+    // margin: 0;
     background-color: white;
     border: 1px solid $middleBlue;
     z-index: 1000;
 }
 
 .dropdown-menu li {
-    padding: 10px;
+    padding: 5px 10px;
     white-space: nowrap;
     cursor: pointer;
-}
+    font-size: 17px;
 
-.dropdown-menu li:hover {
-    background-color: #f1f1f1;
+    &:hover {
+        color: $middleBlue;
+    }
 }
-
 
 
 
@@ -70,42 +68,37 @@ nav {
     background: #fff;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-}
-
-nav ul li {
+nav div {
     display: inline-block;
 }
 
-nav ul li a {
+nav div a {
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: #aaa;
+    color: $lightBlue;
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 10px;
 }
 
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+nav div a,
+nav div a:after,
+nav div a:before {
     transition: all .5s;
 }
 
-nav ul li a:hover {
-    color: #555;
+nav div a:hover {
+    color: $darkBlue;
 }
 
 
 /* stroke */
-nav.stroke ul li a {
+nav div a {
     position: relative;
 }
 
-nav.stroke ul li a:after {
+nav div a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -114,10 +107,10 @@ nav.stroke ul li a:after {
     width: 0%;
     content: '.';
     color: transparent;
-    background: #aaa;
+    background: $middleBlue;
     height: 1px;
 }
 
-nav.stroke ul li a:hover:after {
+nav div a:hover:after {
     width: 100%;
 }

@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "title": "Mandarine Becher",
+      "description": "🍊🎄 Der Geschmack von Weihnachten, neu interpretiert: Der Mandarine-Becher ist nicht nur ein Fest für die Augen, sondern erfüllt dein Zuhause mit gemütlichem Winterflair. Handgemacht, einzigartig und voller Liebe – perfekt für zauberhafte Momente oder als besonderes Geschenk. 🕯️✨",
+      "image": "../img/mandarine-becher",
+      "price": "10€",
+      "mass": "12cm x 8,5cm x 8,5cm",      
+      "mainCategory": "Kerzen",
+      "subCategories": ["Teller", "Standkerzen"]
+    },
+    {
+        "id": 2,
+        "title": "Kuchen-Kerze",
+        "description": "Verwandle dein Zuhause in eine duftende Kuchenbäckerei! 🍰✨ Die handgemachte Kerze gibt es in verschiedenen Farben und mit lecker aussehenden Toppings – dein Lieblingskuchen als Kerze, der niemals verdirbt. Perfekt für eine Extraportion Gemütlichkeit. 🕯️💕",
+        "image": "../img/kuchen-kerze.jpg",
+        "price": "10€",
+        "mass": "6cm x 10cm x 10cm",      
+        "mainCategory": "Kerzen",
+        "subCategories": ["Teller", "Standkerzen"]
+      }
+  ]

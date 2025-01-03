@@ -4,13 +4,11 @@
     </div>
     <div class="dropdown-container">
         <div class="dropdown">
-            <nav class="stroke">
-            <ul>
-                <li (click)="openDropdown(1)" class="dropdown-button">
+            <nav>
+                <div (click)="openDropdown(1)" class="dropdown-button">
                     <a href="#">Kerzen</a>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </nav>
             <!-- <button (click)="openDropdown(1)" class="dropdown-button">
                 <a href="#">Kerzen</a>
             </button> -->
@@ -21,8 +19,11 @@
             </ul>
         </div>
         <div class="dropdown">
-            <button (click)="openDropdown(2)" class="dropdown-button">Epoxidharz
-            </button>
+            <nav>
+                <div (click)="openDropdown(2)" class="dropdown-button">
+                    <a href="#">Epoxidharz</a>
+                </div>
+            </nav>
             <ul *ngIf="dropdownOpen[2]" class="dropdown-menu">
                 <li (click)="closeDropdowns()">Figuren</li>
                 <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
@@ -32,8 +33,11 @@
             </ul>
         </div>
         <div class="dropdown">
-            <button (click)="openDropdown(3)" class="dropdown-button">Keramik
-            </button>
+            <nav>
+                <div (click)="openDropdown(3)" class="dropdown-button">
+                    <a href="#">Keramik</a>
+                </div>
+            </nav>
             <ul *ngIf="dropdownOpen[3]" class="dropdown-menu">
                 <li (click)="closeDropdowns()">Teelichthalter/Döschen</li>
                 <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
@@ -41,8 +45,11 @@
             </ul>
         </div>
         <div class="dropdown">
-            <button (click)="openDropdown(4)" class="dropdown-button">Saison
-            </button>
+            <nav>
+                <div (click)="openDropdown(4)" class="dropdown-button">
+                    <a href="#">Saison</a>
+                </div>
+            </nav>
             <ul *ngIf="dropdownOpen[4]" class="dropdown-menu">
                 <li (click)="closeDropdowns()">Valentinstag</li>
                 <li (click)="closeDropdowns()">Ostern</li>
@@ -54,10 +61,3 @@
         </div>
     </div>
 </header>
-
-<nav class="stroke">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-</nav>
