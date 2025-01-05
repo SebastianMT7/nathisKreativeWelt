@@ -1,23 +1,70 @@
 @import "../../../styles.scss";
 
-.card{
+.card {
     @include dFlex($fd: column, $gap: 10px);
     width: 200px;
     cursor: pointer;
 }
 
-.imgDiv {
+.img-div {
     width: 200px;
     height: 200px;
 
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover; 
-        border-radius: 20px;       
+        object-fit: cover;
+        border-radius: 20px;
     }
 }
 
-.info{
-    @include dFlex($fd: column,$ai: flex-start, $gap: 5px);
+.info {
+    @include dFlex($fd: column, $ai: flex-start, $gap: 5px);
+}
+
+.overlay {
+    @include dFlex();
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.card-detail {
+    @include dFlex($fd: column, $gap: 10px);
+    background-color: white;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.close {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    div {
+        &:hover {
+            scale: 1.2;
+            cursor: pointer;
+
+            svg path {
+                fill: $middleBlue;
+            }
+        }
+    }
+}
+
+.img-div-detail {
+    width: 300px;
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
