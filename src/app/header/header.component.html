@@ -1,63 +1,81 @@
-<header>
-    <div>
-        <img class="logo" src="/assets/img/logo.jpg" alt="">
-    </div>
-    <div class="dropdown-container">
-        <div class="dropdown">
-            <nav>
-                <div (click)="openDropdown(1)" class="dropdown-button">
-                    <a href="#">Kerzen</a>
-                </div>
-            </nav>
-            <!-- <button (click)="openDropdown(1)" class="dropdown-button">
+<section>
+    <header>
+        <div>
+            <img class="logo" src="/assets/img/logo.jpg" alt="">
+        </div>
+        <div class="dropdown-container">
+            <div class="dropdown" [ngStyle]="{'position': 'static'}">
+                <nav>
+                    <div (mouseenter)="openDropdown(1)"
+                    (click)="closeDropdowns()" class="dropdown-button">
+                        <a href="#">Kerzen</a>
+                    </div>
+                </nav>
+                <!-- <button (click)="openDropdown(1)" class="dropdown-button">
                 <a href="#">Kerzen</a>
             </button> -->
-            <ul *ngIf="dropdownOpen[1]" class="dropdown-menu">
-                <li (click)="closeDropdowns()">Standkerzen</li>
-                <li (click)="closeDropdowns()">Becherkerzen</li>
-                <li (click)="closeDropdowns()">Personalisierungen</li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <nav>
-                <div (click)="openDropdown(2)" class="dropdown-button">
-                    <a href="#">Epoxidharz</a>
+                <div class="container-menu" *ngIf="dropdownOpen[1]">
+                    <ul>
+                        <li (click)="closeDropdowns()">Standkerzen</li>
+                        <li (click)="closeDropdowns()">Figuren</li>
+                        <li (click)="closeDropdowns()">Tiere</li>
+                        <li (click)="closeDropdowns()">Blumen</li>
+                        <li (click)="closeDropdowns()">schlichte Schönheiten</li>
+                    </ul>
+                    <ul>
+                        <li (click)="closeDropdowns()">Becherkerzen</li>
+                        <li (click)="closeDropdowns()">Dessertbecher</li>
+                        <li (click)="closeDropdowns()">gefüllte Behältnisse</li>
+                    </ul>
+                    <ul>
+                        <li (click)="closeDropdowns()">Personalisierungen</li>
+                    </ul>
                 </div>
-            </nav>
-            <ul *ngIf="dropdownOpen[2]" class="dropdown-menu">
-                <li (click)="closeDropdowns()">Figuren</li>
-                <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
-                <li (click)="closeDropdowns()">Uhren</li>
-                <li (click)="closeDropdowns()">Sonstiges</li>
-                <li (click)="closeDropdowns()">Personalisierungen</li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <nav>
-                <div (click)="openDropdown(3)" class="dropdown-button">
-                    <a href="#">Keramik</a>
-                </div>
-            </nav>
-            <ul *ngIf="dropdownOpen[3]" class="dropdown-menu">
-                <li (click)="closeDropdowns()">Teelichthalter/Döschen</li>
-                <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
-                <li (click)="closeDropdowns()">Sonstiges</li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <nav>
-                <div (click)="openDropdown(4)" class="dropdown-button">
-                    <a href="#">Saison</a>
-                </div>
-            </nav>
-            <ul *ngIf="dropdownOpen[4]" class="dropdown-menu">
-                <li (click)="closeDropdowns()">Valentinstag</li>
-                <li (click)="closeDropdowns()">Ostern</li>
+            </div>
+            <div class="dropdown">
+                <nav>
+                    <div (mouseenter)="openDropdown(2)"
+                    (click)="closeDropdowns()" class="dropdown-button">
+                        <a href="#">Epoxidharz</a>
+                    </div>
+                </nav>
+                <ul *ngIf="dropdownOpen[2]" class="dropdown-menu">
+                    <li (click)="closeDropdowns()">Figuren</li>
+                    <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
+                    <li (click)="closeDropdowns()">Uhren</li>
+                    <li (click)="closeDropdowns()">Sonstiges</li>
+                    <li (click)="closeDropdowns()">Personalisierungen</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <nav>
+                    <div (mouseenter)="openDropdown(3)" 
+                         (click)="closeDropdowns()" class="dropdown-button">
+                        <a href="#">Keramik</a>
+                    </div>
+                </nav>
+                <ul *ngIf="dropdownOpen[3]" class="dropdown-menu">
+                    <li (click)="closeDropdowns()">Teelichthalter/Döschen</li>
+                    <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
+                    <li (click)="closeDropdowns()">Sonstiges</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <nav>
+                    <div (mouseenter)="openDropdown(4)"
+                         (click)="closeDropdowns()" class="dropdown-button">
+                        <a href="#">Saison</a>
+                    </div>
+                </nav>
+                <ul *ngIf="dropdownOpen[4]" class="dropdown-menu">
+                    <li (click)="closeDropdowns()">Valentinstag</li>
+                    <!-- <li (click)="closeDropdowns()">Ostern</li>
                 <li (click)="closeDropdowns()">Frühling</li>
-                <li (click)="closeDropdowns()">Sommer</li>
-                <li (click)="closeDropdowns()">Herbst</li>
-                <li (click)="closeDropdowns()">Winter</li>
-            </ul>
+                <li (click)="closeDropdowns()">Sommer</li> -->
+                    <li (click)="closeDropdowns()">Herbst/Halloween</li>
+                    <li (click)="closeDropdowns()">Winter/Weihnachten</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+</section>
