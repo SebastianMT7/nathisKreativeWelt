@@ -1,15 +1,14 @@
-<section>
-    <div class="card" (click)="toggleDetailCard()">
-        <div class="img-div">
-            <img src="../../../assets/img/mandarine-becher.jpg" alt="">
-        </div>
-        <div class="info">
-            <span>Mandarine-Becher</span>
-            <span>Preis: 10€</span>
-            <span> Maße: 12cm x 8,5cm x 8,5cm</span>
-        </div>
+<div class="card" (click)="toggleDetailCard()">
+    <div class="img-div">
+        <img src="../../../assets/img/mandarine-becher.jpg" alt="">
     </div>
-</section>
+    <div class="info">
+        <span>Mandarine-Becher</span>
+        <span>Preis: 10€</span>
+        <span> Maße: 12cm x 8,5cm x 8,5cm</span>
+    </div>
+</div>
+
 
 @if (showDetailCard) {
 <div class="overlay">
