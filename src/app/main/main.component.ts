@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component,inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { SingleProductComponent } from './single-product/single-product.component';
+import { FilterProductsService } from './services/filter-products.service';
+
 
 @Component({
   selector: 'app-main',
@@ -11,5 +13,5 @@ import { SingleProductComponent } from './single-product/single-product.componen
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
-
+  filterService = inject(FilterProductsService);
 }

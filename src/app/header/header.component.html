@@ -1,13 +1,14 @@
 
     <header>
         <div>
-            <img class="logo" src="/assets/icons/nathi-logo.jpg" alt="">
+            <img class="logo" src="/icons/nathi-logo.jpg" alt="">
         </div>
         <div class="dropdown-container">
             <div class="dropdown" [ngStyle]="{'position': 'static'}">
                 <nav>
                     <div (mouseenter)="openDropdown(1)"
-                    (click)="closeDropdowns()" class="dropdown-button">
+                    (click)="closeDropdowns(); this.filterService.showProducts('Kerzen')"
+                     class="dropdown-button">
                         <a href="#">Kerzen</a>
                     </div>
                 </nav>
@@ -16,7 +17,7 @@
             </button> -->
                 <div class="container-menu" *ngIf="dropdownOpen[1]">
                     <ul>
-                        <li (click)="closeDropdowns()">Standkerzen</li>
+                        <li (click)="closeDropdowns(); this.filterService.showProducts('Standkerzen')">Standkerzen</li>
                         <li (click)="closeDropdowns()">Figuren</li>
                         <li (click)="closeDropdowns()">Tiere</li>
                         <li (click)="closeDropdowns()">Blumen</li>
@@ -35,7 +36,8 @@
             <div class="dropdown">
                 <nav>
                     <div (mouseenter)="openDropdown(2)"
-                    (click)="closeDropdowns()" class="dropdown-button">
+                    (click)="closeDropdowns(); this.filterService.showProducts('Epoxidharz')"  
+                    class="dropdown-button">
                         <a href="#">Epoxidharz</a>
                     </div>
                 </nav>
@@ -50,7 +52,8 @@
             <div class="dropdown">
                 <nav>
                     <div (mouseenter)="openDropdown(3)" 
-                         (click)="closeDropdowns()" class="dropdown-button">
+                         (click)="closeDropdowns(); this.filterService.showProducts('Keramik')" 
+                         class="dropdown-button">
                         <a href="#">Keramik</a>
                     </div>
                 </nav>
@@ -63,7 +66,8 @@
             <div class="dropdown">
                 <nav>
                     <div (mouseenter)="openDropdown(4)"
-                         (click)="closeDropdowns()" class="dropdown-button">
+                         (click)="closeDropdowns(); this.filterService.showProducts('Saison')"
+                          class="dropdown-button">
                         <a href="#">Saison</a>
                     </div>
                 </nav>

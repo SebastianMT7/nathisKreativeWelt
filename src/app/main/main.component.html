@@ -1,9 +1,14 @@
 <div class="content">
    <app-header></app-header>
    <div class="hero">
-      <img src="../../assets/img/hero.jpg" alt="">
+      <img src="/img/hero.jpg" alt="heroImg">
    </div>
    <section>
+      @for (product of this.filterService.filteredProducts; track $index) {
+         <app-single-product></app-single-product>
+         
+      }
+      <!-- <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product> -->
       <app-single-product></app-single-product>
       <app-single-product></app-single-product>
       <app-single-product></app-single-product>
