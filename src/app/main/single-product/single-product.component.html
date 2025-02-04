@@ -1,11 +1,11 @@
 <div class="card" (click)="toggleDetailCard()">
     <div class="img-div">
-        <img src="/img/mandarine-becher.jpg" alt="">
+        <img src="{{currentProduct.image}}" alt="">
     </div>
     <div class="info">
-        <span>Mandarine-Becher</span>
-        <span>Preis: 10€</span>
-        <span> Maße: 12cm x 8,5cm x 8,5cm</span>
+        <span>{{currentProduct.title}}</span>
+        <span>Preis: {{currentProduct.price}}</span>
+        <span>Maße: {{currentProduct.mass}}</span>
     </div>
 </div>
 
@@ -28,17 +28,14 @@
                 </svg>
             </div>
         </div>
-        <h2>Mandarine-Becher</h2>
+        <h2>{{currentProduct.title}}</h2>
         <div class="img-div-detail">
-            <img src="/img/mandarine-becher.jpg" alt="">
+            <img src="{{currentProduct.image}}" alt="">
         </div>
         <div class="info">
-            <span>Preis: 10€</span>
-            <span> Maße: 12cm x 8,5cm x 8,5cm</span>
-            <span>🍊🎄 Der Geschmack von Weihnachten, neu interpretiert: Der Mandarine-Becher
-                ist nicht nur ein Fest für die Augen, sondern erfüllt dein Zuhause mit
-                gemütlichem Winterflair. Handgemacht, einzigartig und voller Liebe – perfekt für
-                zauberhafte Momente oder als besonderes Geschenk. 🕯️✨</span>
+            <span>Preis: {{currentProduct.price}}</span>
+            <span>Maße: {{currentProduct.mass}}</span>
+            <span>{{currentProduct.description}}</span>
         </div>
     </div>
 </div>

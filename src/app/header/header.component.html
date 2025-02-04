@@ -1,13 +1,13 @@
 
     <header>
         <div>
-            <img class="logo" src="/icons/nathi-logo.jpg" alt="">
+            <img class="logo" src="/icons/nathi-logo.jpg" alt="" (click)="filterByCategory('allProducts')">
         </div>
         <div class="dropdown-container">
             <div class="dropdown" [ngStyle]="{'position': 'static'}">
                 <nav>
                     <div (mouseenter)="openDropdown(1)"
-                    (click)="closeDropdowns(); this.filterService.showProducts('Kerzen')"
+                    (click)="closeDropdowns(); filterByCategory('Kerzen')"
                      class="dropdown-button">
                         <a href="#">Kerzen</a>
                     </div>
@@ -17,67 +17,67 @@
             </button> -->
                 <div class="container-menu" *ngIf="dropdownOpen[1]">
                     <ul>
-                        <li (click)="closeDropdowns(); this.filterService.showProducts('Standkerzen')">Standkerzen</li>
-                        <li (click)="closeDropdowns()">Figuren</li>
-                        <li (click)="closeDropdowns()">Tiere</li>
-                        <li (click)="closeDropdowns()">Blumen</li>
-                        <li (click)="closeDropdowns()">schlichte Schönheiten</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','Standkerzen')">Standkerzen</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','Figuren')">Figuren</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','Tiere')">Tiere</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','Blumen')">Blumen</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','schlichte Schönheiten')">schlichte Schönheiten</li>
                     </ul>
                     <ul>
-                        <li (click)="closeDropdowns()">Becherkerzen</li>
-                        <li (click)="closeDropdowns()">Dessertbecher</li>
-                        <li (click)="closeDropdowns()">gefüllte Behältnisse</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','Becherkerzen')">Becherkerzen</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','Dessertbecher')">Dessertbecher</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','gefüllte Behältnisse')">gefüllte Behältnisse</li>
                     </ul>
                     <ul>
-                        <li (click)="closeDropdowns()">Personalisierungen</li>
+                        <li (click)="closeDropdowns(); filterByCategory('Kerzen','Personalisierungen')">Personalisierungen</li>
                     </ul>
                 </div>
             </div>
             <div class="dropdown">
                 <nav>
                     <div (mouseenter)="openDropdown(2)"
-                    (click)="closeDropdowns(); this.filterService.showProducts('Epoxidharz')"  
+                    (click)="closeDropdowns(); filterByCategory('Epoxidharz')"  
                     class="dropdown-button">
                         <a href="#">Epoxidharz</a>
                     </div>
                 </nav>
                 <ul *ngIf="dropdownOpen[2]" class="dropdown-menu">
-                    <li (click)="closeDropdowns()">Figuren</li>
-                    <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
-                    <li (click)="closeDropdowns()">Uhren</li>
-                    <li (click)="closeDropdowns()">Sonstiges</li>
-                    <li (click)="closeDropdowns()">Personalisierungen</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Epoxidharz','Figuren')">Figuren</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Epoxidharz','Schalen/Untersetzer')">Schalen/Untersetzer</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Epoxidharz','Uhren')">Uhren</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Epoxidharz','Sonstiges')">Sonstiges</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Epoxidharz','Personalisierungen')">Personalisierungen</li>
                 </ul>
             </div>
             <div class="dropdown">
                 <nav>
                     <div (mouseenter)="openDropdown(3)" 
-                         (click)="closeDropdowns(); this.filterService.showProducts('Keramik')" 
+                         (click)="closeDropdowns(); filterByCategory('Keramik')" 
                          class="dropdown-button">
                         <a href="#">Keramik</a>
                     </div>
                 </nav>
                 <ul *ngIf="dropdownOpen[3]" class="dropdown-menu">
-                    <li (click)="closeDropdowns()">Teelichthalter/Döschen</li>
-                    <li (click)="closeDropdowns()">Schalen/Untersetzer</li>
-                    <li (click)="closeDropdowns()">Sonstiges</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Keramik','Teelichthalter/Döschen')">Teelichthalter/Döschen</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Keramik','Schalen/Untersetzer')">Schalen/Untersetzer</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Keramik','Sonstiges')">Sonstiges</li>
                 </ul>
             </div>
             <div class="dropdown">
                 <nav>
                     <div (mouseenter)="openDropdown(4)"
-                         (click)="closeDropdowns(); this.filterService.showProducts('Saison')"
+                         (click)="closeDropdowns(); filterByCategory('Saison')"
                           class="dropdown-button">
                         <a href="#">Saison</a>
                     </div>
                 </nav>
                 <ul *ngIf="dropdownOpen[4]" class="dropdown-menu">
-                    <li (click)="closeDropdowns()">Valentinstag</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Saison','Valentinstag')">Valentinstag</li>
                     <!-- <li (click)="closeDropdowns()">Ostern</li>
-                <li (click)="closeDropdowns()">Frühling</li>
-                <li (click)="closeDropdowns()">Sommer</li> -->
-                    <li (click)="closeDropdowns()">Herbst/Halloween</li>
-                    <li (click)="closeDropdowns()">Winter/Weihnachten</li>
+                         <li (click)="closeDropdowns()">Frühling</li>
+                         <li (click)="closeDropdowns()">Sommer</li> -->
+                    <li (click)="closeDropdowns(); filterByCategory('Saison','Herbst/Halloween')">Herbst/Halloween</li>
+                    <li (click)="closeDropdowns(); filterByCategory('Saison','Winter/Weihnachten')">Winter/Weihnachten</li>
                 </ul>
             </div>
         </div>

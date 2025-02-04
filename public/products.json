@@ -26,7 +26,7 @@
     "id": 1,
     "title": "Mandarine-Becher",
     "description": "🍊🎄 Der Geschmack von Weihnachten, neu interpretiert: Der Mandarine-Becher ist nicht nur ein Fest für die Augen, sondern erfüllt dein Zuhause mit gemütlichem Winterflair. Handgemacht, einzigartig und voller Liebe – perfekt für zauberhafte Momente oder als besonderes Geschenk. 🕯️✨",
-    "image": "../img/mandarine-becher",
+    "image": "/img/mandarine-becher.jpg",
     "price": "10€",
     "mass": "12cm x 8,5cm x 8,5cm",
     "mainCategory": "Kerzen",

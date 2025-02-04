@@ -1,4 +1,5 @@
-import { Component,ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component,ElementRef, HostListener, ViewChild, Input } from '@angular/core';
+import { Product } from '../../interfaces/product';
 
 @Component({
   selector: 'app-single-product',
@@ -8,10 +9,11 @@ import { Component,ElementRef, HostListener, ViewChild } from '@angular/core';
   styleUrl: './single-product.component.scss'
 })
 export class SingleProductComponent {
-
-  showDetailCard = false;
+  @Input() index: number = 0;
+  @Input() currentProduct: Product = new Product();  
   @ViewChild('detailCard', { static: false }) detailCard!: ElementRef;
 
+  showDetailCard = false;
 
   toggleDetailCard(){
     this.showDetailCard = !this.showDetailCard;

@@ -1,23 +1,12 @@
 <div class="content">
-   <app-header></app-header>
+   <app-header (categorySelected)="filterProducts($event)"></app-header>
    <div class="hero">
       <img src="/img/hero.jpg" alt="heroImg">
    </div>
    <section>
-      @for (product of this.filterService.filteredProducts; track $index) {
-         <app-single-product></app-single-product>
-         
+      @for (product of this.filteredProducts; track $index) {
+         <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product>
       }
-      <!-- <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product> -->
-      <app-single-product></app-single-product>
-      <app-single-product></app-single-product>
-      <app-single-product></app-single-product>
-      <app-single-product></app-single-product>
-      <app-single-product></app-single-product>
-      <app-single-product></app-single-product>
-      <app-single-product></app-single-product>
-      <app-single-product></app-single-product>
-      <app-single-product></app-single-product>
    </section>
    <app-footer></app-footer>
 </div>

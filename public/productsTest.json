@@ -1,0 +1,314 @@
+[  
+    {
+      "id": 1,
+      "title": "Mandarine-Becher",
+      "description": "🍊🎄 Der Geschmack von Weihnachten, neu interpretiert: Der Mandarine-Becher ist nicht nur ein Fest für die Augen, sondern erfüllt dein Zuhause mit gemütlichem Winterflair. Handgemacht, einzigartig und voller Liebe – perfekt für zauberhafte Momente oder als besonderes Geschenk. 🕯️✨",
+      "image": "/img/mandarine-becher.jpg",
+      "price": "10€",
+      "mass": "12cm x 8,5cm x 8,5cm",
+      "mainCategory": "Kerzen",
+      "subCategories": ["Becherkerzen"]
+    },
+    {
+      "id": 2,
+      "title": "Kuchen-Kerze",
+      "description": "Verwandle dein Zuhause in eine duftende Kuchenbäckerei! 🍰✨ Die handgemachte Kerze gibt es in verschiedenen Farben und mit lecker aussehenden Toppings – dein Lieblingskuchen als Kerze, der niemals verdirbt. Perfekt für eine Extraportion Gemütlichkeit. 🕯️💕",
+      "image": "/img/kuchen-kerze.jpg",
+      "price": "10€",
+      "mass": "6cm x 10cm x 10cm",
+      "mainCategory": "Kerzen",
+      "subCategories": ["Becherkerzen"]
+    },
+    {
+      "id": 3,
+      "title": "Mond-Sterne-Becher",
+      "description": "✨ Lass dich von der Galaxie verzaubern! Die handgemachte Mond-Sterne-Becherkerze bringt den Zauber des Nachthimmels direkt in dein Zuhause. 🌙⭐ Perfekt für magische Abende und traumhafte Momente. ✨",
+      "image": "/img/mond-sterne-becher.jpg",
+      "price": "10€",
+      "mass": "??????????",
+      "mainCategory": "Kerzen",
+      "subCategories": ["Becherkerzen"]
+    },
+    {
+        "id": 4,
+        "title": "Törtchen",
+        "description": "Ein Fest für Augen und Nase! Diese zauberhafte Törtchen-Kerze, verziert mit einer Waffel und Mini-Donuts, verbreitet einen himmlischen Duft, der jeden Raum verzaubert. Perfekt für alle, die das Besondere lieben! 🧁✨ ",
+        "image": "/img/törtchen.jpg",
+        "price": "5€",
+        "mass": "6cm x 6,5cm x 6,5cm",
+        "mainCategory": "Kerzen",
+        "subCategories": ["Standkerzen"]
+      },
+      {
+        "id": 5,
+        "title": "Blueberry-Pancake-Becher",
+        "description": "Liebst du auch frische Pancakes? 😋 Diese Kerze erfüllt den Raum mit einem tollen Blueberry-Pancake-Aroma! 🫐🥞",
+        "image": "/img/blueberry-pancake-becher.jpg",
+        "price": "10€",
+        "mass": "??????????",
+        "mainCategory": "Kerzen",
+        "subCategories": ["Dessertbecher"]
+      },
+      {
+        "id": 6,
+        "title": "Astronauten-Becher",
+        "description": "🌌✨ Eine Dessertkerze wie aus einer anderen Galaxie! 🪐🌠 Mit funkelnden Sternen, einem mutigen Astronauten auf dem Mond und einem vorbeiziehenden Kometen - fast zu schön zum Anzünden! 🚀💫",
+        "image": "/img/astronaut-becher.jpg",
+        "price": "10€",
+        "mass": "??????????",
+        "mainCategory": "Kerzen",
+        "subCategories": ["Becherkerzen"]
+      },
+      {
+        "id": 7,
+        "title": "Pfoten-Dessert",
+        "description": "Du liebst Tiere? 🐾✨ Dann ist diese handgefertigte Kerze perfekt für dich! Und das Beste: Sie kann in jeder deiner Lieblingsfarben angefertigt werden. Mach dein Zuhause gemütlich und bunt! 🌈🕯️",
+        "image": "/img/pfoten-dessert.jpg",
+        "price": "10€",
+        "mass": "12cm x 8,5cm x 8,5cm",
+        "mainCategory": "Kerzen",
+        "subCategories": ["Becherkerzen"]
+      },
+      
+  {
+    "id": 8,
+    "title": "Kristall-Herz",
+    "description": "Die neuen Kristall-Herz-Kerzen in stilvollen Farben sind da! 💕 Sie sorgen für eine gemütliche Atmosphäre und bringen einen Hauch von Eleganz in jedes Zuhause. 🕯️✨",
+    "image": "/img/kristall-herz.jpg",
+    "price": "10€",
+    "mass": "??????????",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Becherkerzen"]
+  },
+  {
+    "id": 9,
+    "title": "Meerjungfrauen-Becher",
+    "description": "🧜‍♀️🕯 Lass dich verzaubern von der mystischen Schönheit der handgemachten Meerjungfrauenkerze! 🕯🧜‍♀️Die einzigartige Kerze, inspiriert von den Legenden der Meerjungfrauen, bringt eine wundersame und verträumte Atmosphäre in dein Zuhause. Mit ihren filigranen Details und dem sanften Licht entführt sie dich in eine Welt voller Magie und Geheimnisse der Tiefsee. Perfekt für alle, die das Fantastische lieben und ihrem Raum eine besondere, märchenhafte Note verleihen möchten. 🧜‍♀️⭐",
+    "image": "/img/meerjungfrauen-becher.jpg",
+    "price": "10€",
+    "mass": "14cm x 8cm x 8cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Becherkerzen"]
+  },
+  {
+    "id": 10,
+    "title": "Rosie",
+    "description": "Ein Hauch von Luxus: Die schwebende Rosenkerze Rosie auf glitzernden Goldflocken bringt magisches Flair in dein Zuhause. 🌹✨",
+    "image": "/img/rosie.jpg",
+    "price": "10€",
+    "mass": "10,5cm x 8,5cm x 8cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Becherkerzen"]
+  },
+  {
+    "id": 11,
+    "title": "Beach-Becher",
+    "description": "Erlebe die zauberhafte Magie mit dem Beach-Becher! 🐢🌊✨ Diese handgefertigte Schönheit, verziert mit einer entzückenden Schildkröte, einem strahlenden Seestern und einer zarten Muschel, fängt den Charme des Ozeans perfekt ein. Lass den Duft des Meeres dein Zuhause verzaubern und träume dich an den Strand! 🌴🕯️",
+    "image": "/img/beach-becher.jpg",
+    "price": "10€",
+    "mass": "10cm x 8cm x 8cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Becherkerzen"]
+  },
+  {
+    "id": 12,
+    "title": "Totenkopf",
+    "description": "✨ Einzigartig und zeitlos ✨ Unsere Totenkopfkerze, in jeder Farbe erhältlich, verleiht deinem Raum das gewisse Etwas. 💀",
+    "image": "/img/totenkopf.jpg",
+    "price": "8€",
+    "mass": "7,5cm x 7,5cm x 10cm",
+    "mainCategory": ["Kerzen","Saison"],
+    "subCategories": ["Figuren","Herbst/Halloween"]
+  },
+  {
+    "id": 13,
+    "title": "Wandelnder Geist",
+    "description": "Boo! 👻 Diese wandelnde Geisterkerze ist bereit, dir ein schaurig-schönes Licht zu spenden. Zeit, sich langsam auf Halloween einzustimmen – es ist näher als du denkst! 🕯🎃",
+    "image": "/img/wandelnder-geist.jpg",
+    "price": "5€",
+    "mass": "12cm x 5cm x 5,5cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Figuren"]
+  },
+  {
+    "id": 14,
+    "title": "Totenkopf mit Schlange",
+    "description": "Ein faszinierender Anblick: Diese Totenkopfkerze wird von einer Schlange umwickelt und sorgt für eine mystische, aber elegante Atmosphäre. 💀🐍",
+    "image": "/img/totenkopf-mit-schlange.jpg",
+    "price": "8€",
+    "mass": "7,5cm x 6cm x 9,5cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Figuren"]
+  },
+  {
+    "id": 15,
+    "title": "Teddy mit Herz",
+    "description": "Ein Teddy mit Herz: Die perfekte Mischung aus Liebe und Licht 🧸❤️",
+    "image": "/img/teddy-mit-herz.jpg",
+    "price": "2€",
+    "mass": "5cm x 4,5cm x 3,5cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 16,
+    "title": "Eulen-Set",
+    "description": "Für alle Eulenfans da draußen: Diese süßen Eulenkerzen bringen nicht nur Licht, sondern auch eine zauberhafte Atmosphäre in euer Zuhause! 🦉✨ Zusammen entfalten sie ihren vollen Charme.",
+    "image": "/img/eulen-set.jpg",
+    "price": "20€",
+    "mass": "8cm x 6cm x 6cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 17,
+    "title": "Igel",
+    "description": "🦔🕯️ Verzaubere dein Zuhause mit der süßen Igel-Kerze! 🕯️🦔Diese niedliche Kerze in Form von einem Igel mit großen, funkelnden Augen und detaillierten Stacheln bringt einen Hauch von Waldzauber in jeden Raum. Perfekt als dekoratives Highlight oder als einzigartiges Geschenk, schafft sie eine warme und einladende Atmosphäre. Lass das charmante Licht dieser Igel-Kerze dein Zuhause erhellen und für unvergessliche, gemütliche Abende sorgen. 🌟✨",
+    "image": "/img/igel.jpg",
+    "price": "4€",
+    "mass": "4,5cm x 5cm x 6,5cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 18,
+    "title": "Mini-Eule",
+    "description": "Eulen-Fans aufgepasst: Diese Kerze ist ein Muss für eure Sammlung! Magische Atmosphäre garantiert 🦉🕯️",
+    "image": "/img/mini-eule.jpg",
+    "price": "2€",
+    "mass": "5cm x 4cm x 4cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 19,
+    "title": "Katze",
+    "description": "Diese süße Katzenkerze ist der perfekte Begleiter für gemütliche Abende! 🕯️🐱 Mit ihren rosa Ohren und dem niedlichen Gesicht bringt sie jedes Herz zum Schmelzen. Ein Must-Have für Katzenliebhaber! 😻✨",
+    "image": "/img/katze.jpg",
+    "price": "6€",
+    "mass": "8,5cm x 5cm x 4,5cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 19,
+    "title": "Niedliche Katze",
+    "description": "🌟🐱 Lass dich von der unendlichen Süße dieser Katzenkerze verzaubern! Mit ihren großen, liebevollen Augen und dem zarten, detaillierten Fell scheint sie direkt aus einem Märchen zu stammen. Ihr Blick lässt dein Herzen schmelzen und verwandelt jeden Raum in eine Oase der Gemütlichkeit. 🕯️💖",
+    "image": "/img/niedliche-katze.jpg",
+    "price": "5€",
+    "mass": "7,5cm x 5,5cm x 7cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 20,
+    "title": "Teddyhund",
+    "description": "Kleine Freude, große Wirkung! Diese entzückende Hundekerze bringt Licht und Wärme in jede Ecke. Perfekt für alle Hundeliebhaber 🐶🕯️",
+    "image": "/img/teddyhund.jpg",
+    "price": "5€",
+    "mass": "6,5cm x 6,5cm x 7cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 21,
+    "title": "Alpaka",
+    "description": "🦙🕯️ Hol dir den coolsten Deko-Hit mit der unwiderstehlichen Alpaka-Kerze! 🕯️🦙Diese einzigartige Kerze ist der perfekte Mix aus Spaß und Stil. Mit ihrem frechen Look und den detaillierten Strukturen zieht sie alle Blicke auf sich und sorgt für Gespräche. Ob als witziges Geschenk oder als Highlight in deiner Einrichtung – diese Alpakas sind einfach Kult! Lass dein Zuhause mit dieser außergewöhnlichen Kerze strahlen und erlebe, wie sie jeden Raum aufpeppt. 🌟✨",
+    "image": "/img/alpaka.jpg",
+    "price": "5€",
+    "mass": "8,5cm x 3cm x 6,5cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 22,
+    "title": "Hamster",
+    "description": "🐹✨ Hamster-Flair für dein Zuhause! ✨🐹Mach es dir gemütlich mit der zuckersüßen Hamster-Kerze! Diese handgefertigte Schönheit mit rosigen Bäckchen und putzigen Öhrchen bringt tierischen Charme in jeden Raum. Perfekt zum Verschenken oder selber genießen!🕯️💖",
+    "image": "/img/hamster.jpg",
+    "price": "3€",
+    "mass": "3cm x 4,5cm x 6cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 23,
+    "title": "Pingu",
+    "description": "Hallo, ich bin Pingu 🐧 – die süßeste Kerze, die du je gesehen hast! Mit meiner kuscheligen Mütze und den kleinen Herz-Details bringe ich Wärme und Stil in dein Zuhause. Perfekt für die kalten Tage und ein tolles Geschenk! 🕯️💖 ",
+    "image": "/img/pingu.jpg",
+    "price": "3€",
+    "mass": "5cm x 5,5cm x 4,5cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["Tiere"]
+  },
+  {
+    "id": 24,
+    "title": "Epoxi-Kerze",
+    "description": "Lass dich von der Magie dieser handgegossenen Kerze verzaubern! 🕯️💫 Das schimmernde Epoxidharz-Gefäß, selbst kreiert, bringt nicht nur Licht, sondern auch einen Hauch von Eleganz in dein Zuhause. Perfekt für entspannte Abende und besondere Momente. ✨🌸",
+    "image": "/img/epoxi-kerze.jpg",
+    "price": "10€",
+    "mass": "9cm x 8,5cm x 8,5cm (inkl. Deckel)",
+    "mainCategory": "Kerzen",
+    "subCategories": ["gefüllte Behältnisse"]
+  },
+  {
+    "id": 25,
+    "title": "Yin-Yang-Kerze",
+    "description": "🌸 Balance in Duft und Form 🌸🕯️☯️ Bringe Harmonie und Ausgeglichenheit in dein Zuhause mit der handgemachten Yin-Yang-Kerze! ☯️🕯️ Diese wunderschöne Kerze, gestaltet in der symbolischen Form des Yin und Yang, schafft eine beruhigende und harmonische Atmosphäre. Perfekt für Meditation, Yoga oder einfach für mehr Balance im Alltag. Das liebevoll aus Gips gestaltete Gefäß hält diese besondere Kerze. Lass das sanfte Licht dein Zuhause erhellen und für innere Ruhe sorgen. ✨",
+    "image": "/img/ying-yang-kerze.jpg",
+    "price": "10€",
+    "mass": "5,5cm x 9cm x 9cm",
+    "mainCategory": "Kerzen",
+    "subCategories": ["gefüllte Behältnisse"]
+  },
+  {
+    "id": 26,
+    "title": "Karo-Schale",
+    "description": "Zeitlos und stilvoll – die handgefertigte Schale mit subtilen Mustern bringt ein elegantes Flair in dein Zuhause. Ob als Teelichthalter oder Aufbewahrung für deinen Lieblingsschmuck, sie ist ein echtes Highlight! ✨🌿",
+    "image": "/img/karo-schale.jpg",
+    "price": "4€",
+    "mass": "3cm x 8cm x 8cm",
+    "mainCategory": "Keramik",
+    "subCategories": ["Schalen/Untersetzer"]
+  },
+  {
+    "id": 27,
+    "title": "Muschelschale",
+    "description": "🌊✨ Diese wunderschöne Schale sieht aus wie eine echte Muschel! 🐚 Sie ist groß genug, um als auffällige Schmuckschale zu dienen oder du lässt sie als einzigartige Kerze anfertigen. Ein vielseitiger Hingucker für dein Zuhause! 🕯💍",
+    "image": "/img/muschelschale.jpg",
+    "price": "7€",
+    "mass": "6cm x 15,5cm x 14,5cm",
+    "mainCategory": "Keramik",
+    "subCategories": ["Schalen/Untersetzer"]
+  },
+  {
+    "id": 28,
+    "title": "Zauberhaftes Döschen",
+    "description": "Dieses zauberhafte Döschen ist bereit, deine kleinen Schätze sicher zu verwahren oder als duftende Kerze für eine stimmungsvolle Atmosphäre zu sorgen. ✨🔒 Wo Kreativität und Funktionalität verschmelzen!",
+    "image": "/img/zauberhaftes-döschen.jpg",
+    "price": "10€",
+    "mass": "9,5cm x 8cm x 8cm",
+    "mainCategory": "Keramik",
+    "subCategories": ["Schalen/Untersetzer"]
+  },
+  {
+    "id": 29,
+    "title": "Pfoten-Döschen",
+    "description": "Entdecke die süßen Pfoten-Döschen – perfekt für kleine Schätze oder als bezaubernde Kerze erhältlich! 🐾✨",
+    "image": "/img/pfoten-döschen.jpg",
+    "price": "5€",
+    "mass": "5,5cm x 9cm x 8,5cm (mit Deckel)",
+    "mainCategory": "Keramik",
+    "subCategories": ["Schalen/Untersetzer"]
+  },
+  {
+    "id": 30,
+    "title": "Ginkgo-Teller",
+    "description": "Handgemacht und einzigartig! 🌿 Dieser neue Gips-Teller in Form eines Ginkgoblattes verleiht jedem Raum eine besondere Note. Perfekt für deine Lieblingsschmuckstücke oder als Dekoration. 💕",
+    "image": "/img/ginkgo-teller.jpg",
+    "price": "5€",
+    "mass": "2cm x 18,5cm x 12,5cm",
+    "mainCategory": "Keramik",
+    "subCategories": ["Schalen/Untersetzer"]
+  }
+
+]

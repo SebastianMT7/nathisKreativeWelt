@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component,inject} from '@angular/core';
-import { FilterProductsService } from '../main/services/filter-products.service';
+import { Component, inject, EventEmitter, Output } from '@angular/core';
+import { ProductsService } from '../main/services/products.service';
+import { MainComponent } from '../main/main.component';
 
 @Component({
   selector: 'app-header',
@@ -10,10 +11,10 @@ import { FilterProductsService } from '../main/services/filter-products.service'
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-   filterService = inject(FilterProductsService)
 
-   
+  filterService = inject(ProductsService)
   dropdownOpen: { [key: number]: boolean } = {};
+  @Output() categorySelected = new EventEmitter<{ mainCategory: string; subCategory?: string }>();
 
   openDropdown(index: number) {
     if (this.dropdownOpen[index]) {
@@ -28,5 +29,9 @@ export class HeaderComponent {
     for (let key in this.dropdownOpen) {
       this.dropdownOpen[key] = false;
     }
+  }
+
+  filterByCategory(mainCategory: string, subCategory?: string) {
+    this.categorySelected.emit({ mainCategory, subCategory }); // Korrektur: Objekt senden
   }
 }
