@@ -8,15 +8,11 @@ import { Product } from '../../interfaces/product';
 })
 export class ProductsService {
 
-  // mainCategory = ['Kerzen', 'Epoxidharz', 'Keramik', 'Saison'];
-  // subCategory = [];
-  // filteredProducts = [];
-
   private jsonUrl = '/productsTest.json';
 
   constructor(private http: HttpClient) {}
 
-  getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.jsonUrl);
+  getProducts(): Observable<{ massDessertbecher: string, products: any[] }> {
+    return this.http.get<{ massDessertbecher: string, products: any[] }>(this.jsonUrl);
   }
 }

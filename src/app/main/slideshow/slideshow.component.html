@@ -1,0 +1,23 @@
+
+<div class="diashow-container">
+    <img [src]="images[currentIndex]" alt="Hero Image" class="diashow-image">
+
+    <div class="controls">
+        <button class="prev" (click)="manualPrev()">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20.000000pt" height="20.000000pt"
+                viewBox="0 0 145.000000 250.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M655 1840 l-590 -590 590 -590 590 -590 67 67 68 68 -522 522 -523 523 523 523 522 522 -68 68 -67 67 -590 -590z" />
+                </g>
+            </svg>
+        </button>
+        <button class="next" (click)="manualNext()">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20.000000pt" height="20.000000pt"
+                viewBox="0 0 145.000000 250.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M137 2363 l-67 -68 522 -522 523 -523 -523 -523 -522 -522 68 -68 67 -67 590 590 590 590 -590 590 -590 590 -68 -67z" />
+                </g>
+            </svg>
+        </button>
+    </div>
+</div>

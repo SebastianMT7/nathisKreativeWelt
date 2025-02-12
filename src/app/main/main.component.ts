@@ -3,12 +3,13 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { ProductsService } from './services/products.service';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, SingleProductComponent],
+  imports: [HeaderComponent, FooterComponent, SingleProductComponent,SlideshowComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
@@ -21,11 +22,21 @@ export class MainComponent implements OnInit {
   constructor(private productService: ProductsService) { }
 
   ngOnInit() {
+    console.log('allprodukte:',this.allProducts); 
     this.productService.getProducts().subscribe(data => {
-      this.allProducts = data;
-      this.filteredProducts = data;
+      // this.allProducts = data;
+      // this.filteredProducts = data;
+      this.allProducts = data.products.map(product => ({
+        ...product,
+        mass: product.mass === "massDessertbecher" ? data.massDessertbecher : product.mass
+      }));
+      this.filteredProducts = data.products.map(product => ({
+        ...product,
+        mass: product.mass === "massDessertbecher" ? data.massDessertbecher : product.mass
+      }));
     });
-    // console.log('gef.produkte:',this.filteredProducts);    
+    
+    console.log('allprodukte:',this.allProducts);    
   }
 
   filterProducts(filter: { mainCategory: string; subCategory?: string }) {

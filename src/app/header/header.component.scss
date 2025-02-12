@@ -13,6 +13,8 @@ header {
     border-bottom: 1px solid $lightBlue;
     width: 100vw;
     position: fixed;
+    z-index: 1000;
+    height: 100px;
 }
 
 .logo {
@@ -128,11 +130,10 @@ nav div a:hover:after {
 .container-menu {
     @include dFlex($jc: space-around, $ai: flex-start, );
     position: absolute;
-    top: 110px;
+    top: 100px;
     left: 0;
     background-color: white;
     width: 100vw;
-    border-top: 1px solid $lightBlue;
     border-bottom: 1px solid $lightBlue;
     padding: 20px 10px;
 
