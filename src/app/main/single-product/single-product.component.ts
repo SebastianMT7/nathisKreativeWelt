@@ -1,30 +1,28 @@
-import { Component,ElementRef, HostListener, ViewChild, Input } from '@angular/core';
-import { Product } from '../../interfaces/product';
+import { Component, ElementRef, HostListener, ViewChild, Input } from '@angular/core';
+import { Product } from '../../models/product';
+import { ClickOutsideDirective } from '../directives/click-outside.directive';
 
 @Component({
   selector: 'app-single-product',
   standalone: true,
-  imports: [],
+  imports: [ClickOutsideDirective],
   templateUrl: './single-product.component.html',
   styleUrl: './single-product.component.scss'
 })
 export class SingleProductComponent {
   @Input() index: number = 0;
-  @Input() currentProduct: Product = new Product();  
-  @ViewChild('detailCard', { static: false }) detailCard!: ElementRef;
+  @Input() currentProduct: Product = new Product();
 
   showDetailCard = false;
 
-  toggleDetailCard(){
-    this.showDetailCard = !this.showDetailCard;
+  openDetailCard() {
+    this.showDetailCard = true;
+    console.log("detailcard",this.showDetailCard)
   }
 
-  @HostListener('document:click', ['$event'])
-  handleOutsideClick(event: Event):void {  
-
-    // if (this.detailCard && !this.detailCard.nativeElement.contains(event.target)) {
-    //   this.showDetailCard = false;
-    // }
+  closeDetailCard() {
+    this.showDetailCard = false;
+    console.log("detailcard",this.showDetailCard)
   }
 
 }

@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, inject, EventEmitter, Output } from '@angular/core';
 import { ProductsService } from '../main/services/products.service';
 import { MainComponent } from '../main/main.component';
+import { ClickOutsideDirective } from '../main/directives/click-outside.directive';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,ClickOutsideDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -33,5 +34,6 @@ export class HeaderComponent {
 
   filterByCategory(mainCategory: string, subCategory?: string) {
     this.categorySelected.emit({ mainCategory, subCategory }); // Korrektur: Objekt senden
+    this.closeDropdowns();
   }
 }

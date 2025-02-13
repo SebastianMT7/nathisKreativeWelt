@@ -13,7 +13,7 @@ header {
     border-bottom: 1px solid $lightBlue;
     width: 100vw;
     position: fixed;
-    z-index: 1000;
+    z-index: 5;
     height: 100px;
 }
 
@@ -69,7 +69,8 @@ header {
     width: auto;
 
     &:hover {
-        color: $middleBlue;
+        background-color: $lightBlue;
+        color: white;
     }
 }
 
@@ -144,7 +145,7 @@ nav div a:hover:after {
         cursor: pointer;
 
         li:hover {
-            color: $middleBlue;
+            color: $lightBlue;
         }
 
         :nth-child(1) {

@@ -1,5 +1,14 @@
 {
-  "massDessertbecher": "ca. 14cm x 9cm",
+  "massStandard": [
+    {
+      "massDessertbecher": "ca.14cm x 9cm"
+    },
+    {
+      "massGlühweinkerzen": "ca.7,5cm x 10cm"
+    }
+  ],
+  "massDessertbecher": "ca.14cm x 9cm",
+  "massGlühweinkerzen": "ca.7,5cm x 10cm",
   "products": [
     {
       "id": 1,
@@ -156,7 +165,10 @@
       "image": "/img/wandelnder-geist.jpg",
       "price": "5€",
       "mass": "12cm x 5cm x 5,5cm",
-      "mainCategory": ["Kerzen","Saison"],
+      "mainCategory": [
+        "Kerzen",
+        "Saison"
+      ],
       "subCategories": [
         "Figuren",
         "Herbst/Halloween"
@@ -169,7 +181,10 @@
       "image": "/img/totenkopf-mit-schlange.jpg",
       "price": "8€",
       "mass": "7,5cm x 6cm x 9,5cm",
-      "mainCategory": ["Kerzen","Saison"],
+      "mainCategory": [
+        "Kerzen",
+        "Saison"
+      ],
       "subCategories": [
         "Figuren",
         "Herbst/Halloween"

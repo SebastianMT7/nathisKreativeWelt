@@ -1,20 +1,23 @@
-<div class="card" (click)="toggleDetailCard()">
+<div class="card" (click)="openDetailCard()">
     <div class="img-div">
         <img src="{{currentProduct.image}}" alt="">
     </div>
     <div class="info">
         <span>{{currentProduct.title}}</span>
         <span>Preis: {{currentProduct.price}}</span>
-        <span>Maße: {{currentProduct.mass}}</span>
+        <div class="mass-div">
+            <span>Maße:</span> 
+            <span>{{currentProduct.mass}}</span> 
+        </div>
     </div>
 </div>
 
 
 @if (showDetailCard) {
 <div class="overlay">
-    <div class="card-detail" #detailCard>
+    <div class="card-detail" appClickOutside (clickOutside)="closeDetailCard()">
         <div class="close">
-            <div (click)="toggleDetailCard()">
+            <div (click)="closeDetailCard()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_103747_2416" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
                         width="24" height="24">

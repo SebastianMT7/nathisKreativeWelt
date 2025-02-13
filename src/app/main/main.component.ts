@@ -9,7 +9,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, SingleProductComponent,SlideshowComponent],
+  imports: [HeaderComponent, FooterComponent, SingleProductComponent, SlideshowComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
@@ -18,11 +18,13 @@ export class MainComponent implements OnInit {
   allProducts: any[] = [];
   filteredProducts: any[] = [];
   filterService = inject(ProductsService);
+  isFiltered: boolean = false;
+  category = 'alle Produkte';
 
   constructor(private productService: ProductsService) { }
 
   ngOnInit() {
-    console.log('allprodukte:',this.allProducts); 
+    //console.log('allprodukte:', this.allProducts);
     this.productService.getProducts().subscribe(data => {
       // this.allProducts = data;
       // this.filteredProducts = data;
@@ -35,27 +37,42 @@ export class MainComponent implements OnInit {
         mass: product.mass === "massDessertbecher" ? data.massDessertbecher : product.mass
       }));
     });
-    
-    console.log('allprodukte:',this.allProducts);    
+    //console.log('allprodukte:', this.allProducts);
   }
 
   filterProducts(filter: { mainCategory: string; subCategory?: string }) {
-    console.log('mainCategory:', filter.mainCategory);
+    //console.log('mainCategory:', filter.mainCategory);
     if (filter.mainCategory === 'allProducts') {
       this.filteredProducts = [...this.allProducts];
-      console.log('MainProdukte:', this.filteredProducts);
+      this.category = 'alle Produkte';
+      //console.log('MainProdukte:', this.filteredProducts);
+      this.isFiltered = false;
     } else {
+      this.filterToCategorys((filter.mainCategory), (filter.subCategory))
+    }
+  }
 
-      if (!filter.subCategory) {
-        this.filteredProducts = this.allProducts.filter(product => product.mainCategory.includes(filter.mainCategory));
-        console.log('MainProdukte:', this.filteredProducts);
-      } else {
-        this.filteredProducts = this.allProducts.filter(product =>
-          product.mainCategory.includes(filter.mainCategory) && product.subCategories.includes(filter.subCategory)
-        );
-        console.log('Sub:', filter.subCategory);
-        console.log('SubProdukte:', this.filteredProducts);
-      }
+  filterToCategorys(mainCategory: string, subCategory?: string) {
+    if (!subCategory) {
+      this.filteredProducts = this.allProducts.filter(product => product.mainCategory.includes(mainCategory));
+      this.category = (mainCategory);
+      //console.log('MainProdukte:', this.filteredProducts);
+    } else {
+      this.filteredProducts = this.allProducts.filter(product =>
+        product.mainCategory.includes(mainCategory) && product.subCategories.includes(subCategory)
+      );
+      this.category = (subCategory);
+      //console.log('Sub:', subCategory);
+      //console.log('SubProdukte:', this.filteredProducts);
+    }
+    this.isFiltered = true;
+  }
+
+  checkPlural() {
+    if (this.filteredProducts.length === 1) {
+      return 'Produkt';
+    } else {
+      return 'Produkte';
     }
   }
 }

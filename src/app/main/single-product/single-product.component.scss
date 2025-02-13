@@ -4,6 +4,12 @@
     @include dFlex($fd: column, $gap: 10px);
     width: 200px;
     cursor: pointer;
+
+    &:hover{
+        //background-color: $lightBlue;
+        //border-radius: 20px;
+        //scale: 1.05;
+    }
 }
 
 .img-div {
@@ -15,11 +21,19 @@
         height: 100%;
         object-fit: cover;
         border-radius: 20px;
+
+        &:hover{
+            scale: 1.05;
+        }
     }
 }
 
 .info {
     @include dFlex($fd: column, $ai: flex-start, $gap: 5px);
+
+    .mass-div{
+        @include dFlex($jc: flex-end, $ai: flex-start, $gap: 5px);
+    }
 }
 
 .overlay {
@@ -30,7 +44,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 10;
 }
 
 .card-detail {
