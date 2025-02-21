@@ -1,5 +1,5 @@
 export class Product {
-    id: number;
+    // id: number;
     title: string;
     description: string;
     image: string;
@@ -9,7 +9,7 @@ export class Product {
     subCategories: string[];
 
     constructor(obj?: Partial<Product>) {
-        this.id = obj?.id ?? 0;
+        // this.id = obj?.id ?? 0;
         this.title = obj?.title ?? '';
         this.description = obj?.description ?? '';
         this.image = obj?.image ?? '';

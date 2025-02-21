@@ -11,54 +11,6 @@
   "massGlühweinkerzen": "ca.7,5cm x 10cm",
   "products": [
     {
-      "id": 1,
-      "title": "Mandarine-Becher",
-      "description": "🍊🎄 Der Geschmack von Weihnachten, neu interpretiert: Der Mandarine-Becher ist nicht nur ein Fest für die Augen, sondern erfüllt dein Zuhause mit gemütlichem Winterflair. Handgemacht, einzigartig und voller Liebe – perfekt für zauberhafte Momente oder als besonderes Geschenk. 🕯️✨",
-      "image": "/img/mandarine-becher.jpg",
-      "price": "10€",
-      "mass": "12cm x 8,5cm x 8,5cm",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Kuchen-Kerze",
-      "description": "Verwandle dein Zuhause in eine duftende Kuchenbäckerei! 🍰✨ Die handgemachte Kerze gibt es in verschiedenen Farben und mit lecker aussehenden Toppings – dein Lieblingskuchen als Kerze, der niemals verdirbt. Perfekt für eine Extraportion Gemütlichkeit. 🕯️💕",
-      "image": "/img/kuchen-kerze.jpg",
-      "price": "10€",
-      "mass": "6cm x 10cm x 10cm",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Mond-Sterne-Becher",
-      "description": "✨ Lass dich von der Galaxie verzaubern! Die handgemachte Mond-Sterne-Becherkerze bringt den Zauber des Nachthimmels direkt in dein Zuhause. 🌙⭐ Perfekt für magische Abende und traumhafte Momente. ✨",
-      "image": "/img/mond-sterne-becher.jpg",
-      "price": "10€",
-      "mass": "??????????",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Törtchen",
-      "description": "Ein Fest für Augen und Nase! Diese zauberhafte Törtchen-Kerze, verziert mit einer Waffel und Mini-Donuts, verbreitet einen himmlischen Duft, der jeden Raum verzaubert. Perfekt für alle, die das Besondere lieben! 🧁✨ ",
-      "image": "/img/törtchen.jpg",
-      "price": "5€",
-      "mass": "6cm x 6,5cm x 6,5cm",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Standkerzen"
-      ]
-    },
-    {
       "id": 5,
       "title": "Blueberry-Pancake-Becher",
       "description": "Liebst du auch frische Pancakes? 😋 Diese Kerze erfüllt den Raum mit einem tollen Blueberry-Pancake-Aroma! 🫐🥞",
@@ -70,78 +22,7 @@
         "Dessertbecher"
       ]
     },
-    {
-      "id": 6,
-      "title": "Astronauten-Becher",
-      "description": "🌌✨ Eine Dessertkerze wie aus einer anderen Galaxie! 🪐🌠 Mit funkelnden Sternen, einem mutigen Astronauten auf dem Mond und einem vorbeiziehenden Kometen - fast zu schön zum Anzünden! 🚀💫",
-      "image": "/img/astronaut-becher.jpg",
-      "price": "10€",
-      "mass": "??????????",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Pfoten-Dessert",
-      "description": "Du liebst Tiere? 🐾✨ Dann ist diese handgefertigte Kerze perfekt für dich! Und das Beste: Sie kann in jeder deiner Lieblingsfarben angefertigt werden. Mach dein Zuhause gemütlich und bunt! 🌈🕯️",
-      "image": "/img/pfoten-dessert.jpg",
-      "price": "10€",
-      "mass": "12cm x 8,5cm x 8,5cm",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
-    {
-      "id": 8,
-      "title": "Kristall-Herz",
-      "description": "Die neuen Kristall-Herz-Kerzen in stilvollen Farben sind da! 💕 Sie sorgen für eine gemütliche Atmosphäre und bringen einen Hauch von Eleganz in jedes Zuhause. 🕯️✨",
-      "image": "/img/kristall-herz.jpg",
-      "price": "10€",
-      "mass": "??????????",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
-    {
-      "id": 9,
-      "title": "Meerjungfrauen-Becher",
-      "description": "🧜‍♀️🕯 Lass dich verzaubern von der mystischen Schönheit der handgemachten Meerjungfrauenkerze! 🕯🧜‍♀️Die einzigartige Kerze, inspiriert von den Legenden der Meerjungfrauen, bringt eine wundersame und verträumte Atmosphäre in dein Zuhause. Mit ihren filigranen Details und dem sanften Licht entführt sie dich in eine Welt voller Magie und Geheimnisse der Tiefsee. Perfekt für alle, die das Fantastische lieben und ihrem Raum eine besondere, märchenhafte Note verleihen möchten. 🧜‍♀️⭐",
-      "image": "/img/meerjungfrauen-becher.jpg",
-      "price": "10€",
-      "mass": "14cm x 8cm x 8cm",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
-    {
-      "id": 10,
-      "title": "Rosie",
-      "description": "Ein Hauch von Luxus: Die schwebende Rosenkerze Rosie auf glitzernden Goldflocken bringt magisches Flair in dein Zuhause. 🌹✨",
-      "image": "/img/rosie.jpg",
-      "price": "10€",
-      "mass": "10,5cm x 8,5cm x 8cm",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
-    {
-      "id": 11,
-      "title": "Beach-Becher",
-      "description": "Erlebe die zauberhafte Magie mit dem Beach-Becher! 🐢🌊✨ Diese handgefertigte Schönheit, verziert mit einer entzückenden Schildkröte, einem strahlenden Seestern und einer zarten Muschel, fängt den Charme des Ozeans perfekt ein. Lass den Duft des Meeres dein Zuhause verzaubern und träume dich an den Strand! 🌴🕯️",
-      "image": "/img/beach-becher.jpg",
-      "price": "10€",
-      "mass": "10cm x 8cm x 8cm",
-      "mainCategory": "Kerzen",
-      "subCategories": [
-        "Becherkerzen"
-      ]
-    },
+    
     {
       "id": 12,
       "title": "Totenkopf",
