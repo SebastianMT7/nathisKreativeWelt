@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 .card {
-    @include dFlex($fd: column, $gap: 10px);
+    @include dFlex($fd: column,$ai: unset, $gap: 10px);
     width: 200px;
     cursor: pointer;
 
@@ -30,6 +30,7 @@
 
 .info {
     @include dFlex($fd: column, $ai: flex-start, $gap: 5px);
+    padding-left: 20px;
 
     .mass-div{
         @include dFlex($jc: flex-end, $ai: flex-start, $gap: 5px);

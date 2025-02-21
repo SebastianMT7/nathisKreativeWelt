@@ -4,6 +4,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { ProductsService } from './services/products.service';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { Product } from '../models/product';
 
 
 @Component({
@@ -30,14 +31,24 @@ export class MainComponent implements OnInit {
       // this.filteredProducts = data;
       this.allProducts = data.products.map(product => ({
         ...product,
-        mass: product.mass === "massDessertbecher" ? data.massDessertbecher : product.mass
+        mass: product.mass = this.findMass(product, data)
       }));
       this.filteredProducts = data.products.map(product => ({
         ...product,
-        mass: product.mass === "massDessertbecher" ? data.massDessertbecher : product.mass
+        mass: product.mass = this.findMass(product, data)
       }));
     });
     //console.log('allprodukte:', this.allProducts);
+  }
+
+  findMass(product: Product, data: any) {
+    if (product.mass === "massDessertbecher") {
+      return data.massDessertbecher
+    } else if (product.mass === "massGlühweinkerzen") {
+      return data.massGlühweinkerzen
+    } else {
+      return product.mass
+    }
   }
 
   filterProducts(filter: { mainCategory: string; subCategory?: string }) {
@@ -61,18 +72,11 @@ export class MainComponent implements OnInit {
       this.filteredProducts = this.allProducts.filter(product =>
         product.mainCategory.includes(mainCategory) && product.subCategories.includes(subCategory)
       );
-      this.category = (subCategory);
+      this.category = `${mainCategory} (${subCategory})`;
       //console.log('Sub:', subCategory);
       //console.log('SubProdukte:', this.filteredProducts);
     }
     this.isFiltered = true;
   }
 
-  checkPlural() {
-    if (this.filteredProducts.length === 1) {
-      return 'Produkt';
-    } else {
-      return 'Produkte';
-    }
-  }
 }

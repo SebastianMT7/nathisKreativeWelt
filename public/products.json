@@ -7,8 +7,6 @@
             "massGlühweinkerzen": "ca.7,5cm x 10cm"
         }
     ],
-    "massDessertbecher": "ca.14cm x 9cm",
-    "massGlühweinkerzen": "ca.7,5cm x 10cm",
     "products": [
         {
             "title": "Beach-Becher",
@@ -437,7 +435,7 @@
       {
         "title": "Engelsflügel",
         "description": "Schaffe eine himmlische Atmosphäre mit diesem bezaubernden Teelichthalter aus Engelsflügeln, die ein Herz formen. Perfekt für romantische Abende oder als besondere Deko. ✨💖",
-        "image": "/img/engelsflügel.jpg",
+        "image": "/img/engelsfluegel.jpg",
         "price": "4€",
         "mass": "5,5cm x 9,5cm x 7,5cm",
         "mainCategory": ["Keramik"],
@@ -446,7 +444,7 @@
       {
         "title": "Lotushalter",
         "description": "🌸🕯️Schaffe eine Atmosphäre der Ruhe und Gelassenheit in deinem Zuhause mit dem handgemachten Lotus-Teelichthalter in Marmoroptik 🕯️🌸Dieser wunderschöne Kerzenhalter in Form einer Lotusblüte bietet eine stilvolle und beruhigende Präsentation für ein Teelicht. So wird dein Wohnzimmer zu einer Oase der Entspannung ✨💕",
-        "image": "/img/Lotushalter.jpg",
+        "image": "/img/lotushalter.jpg",
         "price": "4€",
         "mass": "2cm x 9,5cm x 9.5cm",
         "mainCategory": ["Keramik"],
@@ -455,7 +453,7 @@
       {
         "title": "Herzhalter",
         "description": "Dieser herzförmige Teelichthalter trägt das Wort 'LOVE' und kann individuell mit Sprüchen, Namen oder Bildern gestaltet werden. Die kleinen Unperfektheiten machen ihn zu etwas ganz Besonderem. So bringst du ein bisschen Extra-Liebe und Charakter in dein Zuhause. ✨❤️",
-        "image": "/img/Herzhalter.jpg",
+        "image": "/img/herzhalter.jpg",
         "price": "5€",
         "mass": "2,5cm x 10,5cm x 8,5cm",
         "mainCategory": ["Keramik","Saison"],
@@ -464,7 +462,7 @@
       {
         "title": "Bubblehalter",
         "description": "Tauche ein in die Welt der Eleganz mit dem einzigartigen Teelichthalter in Marmoroptik 🕯️✨ Ideal, um deinem Zuhause einen Hauch von Luxus und Gemütlichkeit zu verleihen.",
-        "image": "/img/Bubblehalter.jpg",
+        "image": "/img/bubblehalter.jpg",
         "price": "4€",
         "mass": "4,5cm x 8,5cm x 8,5cm",
         "mainCategory": ["Keramik"],
@@ -592,7 +590,7 @@
         "description": "Selbstgemacht und voller Weihnachtszauber: Meine Glühweinkerze! 🕯️✨ Der Duft nach Apfel und Zimt bringt den Weihnachtsmarkt direkt ins Wohnzimmer. Was darf bei euch in der Weihnachtszeit nicht fehlen?",
         "image": "/img/glühweinkerze.jpg",
         "price": "8€",
-        "mass": "????????????",
+        "mass": "massGlühweinkerzen",
         "mainCategory": ["Kerzen","Saison"],
         "subCategories": ["Winter/Weihnachten"]
       },

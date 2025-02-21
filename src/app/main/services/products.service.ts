@@ -10,9 +10,9 @@ export class ProductsService {
 
   private jsonUrl = '/products.json';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<{ massDessertbecher: string, products: any[] }> {
-    return this.http.get<{ massDessertbecher: string, products: any[] }>(this.jsonUrl);
+  getProducts(): Observable<{ massStandard:any[], products: any[] }> {
+    return this.http.get<{ massStandard:any[], products: any[] }>(this.jsonUrl);
   }
 }
