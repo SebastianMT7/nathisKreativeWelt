@@ -356,7 +356,7 @@
       {
         "title": "Knoten",
         "description": "Ein echter Hingucker: Diese Knotenkerze verbindet Kunst und Gemütlichkeit. 🕯️💫",
-        "image": "/img/knoten.jog",
+        "image": "/img/knoten.jpg",
         "price": "4€",
         "mass": "5cm x5,5cm x 5cm",
         "mainCategory": ["Kerzen"],
@@ -392,7 +392,7 @@
       {
         "title": "Buddha",
         "description": "Finde innere Ruhe und Gelassenheit mit der handgefertigten Buddha-Kerze 🕯️🙏 Perfekt für meditative Momente oder als liebevolles Geschenk. ",
-        "image": "/img/buddh.jpg",
+        "image": "/img/buddha.jpg",
         "price": "2€",
         "mass": "6cm x 3,5cm x 2cm",
         "mainCategory": ["Kerzen"],
@@ -401,7 +401,7 @@
       {
         "title": "Kleine Bubble",
         "description": "Die kleine Bubblekerze mit wunderschönem Farbverlauf 🌈✨",
-        "image": "../img/kleine-bubble",
+        "image": "/img/kleine-bubble.jpg",
         "price": "2€",
         "mass": "4cm x 4cm x 4cm",
         "mainCategory": ["Kerzen"],
