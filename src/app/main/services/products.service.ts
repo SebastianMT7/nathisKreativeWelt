@@ -9,10 +9,11 @@ import { Product } from '../../models/product';
 export class ProductsService {
 
   private jsonUrl = '/products.json';
+  menuOpen: boolean = false;
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<{ massStandard:any[], products: any[] }> {
-    return this.http.get<{ massStandard:any[], products: any[] }>(this.jsonUrl);
+  getProducts(): Observable<{ massStandard: any[], products: any[] }> {
+    return this.http.get<{ massStandard: any[], products: any[] }>(this.jsonUrl);
   }
 }

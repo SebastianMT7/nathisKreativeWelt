@@ -1,0 +1,49 @@
+<section class="sidebar">
+    <!-- Hauptkategorie-Ebene -->
+    @if (currentLevel === 0) {
+    <ul>
+        <li class="sidebar-head">
+            <span>Hauptkategorien</span>
+            <button class="close-btn" (click)="closeSidebar()">×</button>
+        </li>
+
+        @for (category of categories; track $index) {
+        <li (click)="selectCategory(category)">
+            {{ category.name }}
+        </li>
+        }
+    </ul>
+    }
+
+    <!-- Unterkategorie-Ebene -->
+    @if (currentLevel === 1) {
+    <ul>
+        <li class="sidebar-head">
+            <p class="back-btn" (click)="goBack()"><-</p>
+            <p (click)="goBack()"> {{currentCategory}}</p>
+            <button class="close-btn" (click)="closeSidebar()">×</button>
+        </li>
+        @for (sub of selectedCategory?.subcategories; track $index) {
+        <li (click)="selectSubCategory(sub)">
+            {{ sub.name }}
+        </li>
+        }
+    </ul>
+    }
+
+    <!-- Unter-Unterkategorie-Ebene -->
+    @if (currentLevel === 2) {
+    <ul>
+        <li class="sidebar-head">
+            <p class="back-btn" (click)="goBack()"><-</p>
+            <p (click)="goBack()"> {{currentCategory}}</p>
+            <button class="close-btn" (click)="closeSidebar()">×</button>
+        </li>
+        @for (subSub of selectedSubCategory?.subcategories; track $index) {
+        <li (click)="selectSubSubCategory(subSub)">
+            {{ subSub.name }}
+        </li>
+        }
+    </ul>
+    }
+</section>

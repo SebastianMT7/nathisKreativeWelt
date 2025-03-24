@@ -5,6 +5,11 @@ footer {
     background-color: $middleBlue;
     padding: 20px 60px;
     //width: 100vw;
+    
+    @media (max-width: 590px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .logo {

@@ -19,3 +19,16 @@ $white: #E8EDE7;
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient($lightBlue, $darkestBlue);
+    border-radius: 8px;
+  }

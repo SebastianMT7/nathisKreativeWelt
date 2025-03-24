@@ -2,6 +2,10 @@
    <app-header (categorySelected)="filterProducts($event)"></app-header>
    <app-slideshow></app-slideshow>
 
+   <!-- @if (proService.menuOpen) {
+   <app-sidebar></app-sidebar>
+   } -->
+
    <div class="welcome-text">
       @if (isFiltered) {
       <div>

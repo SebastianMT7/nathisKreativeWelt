@@ -26,6 +26,10 @@ header {
 .dropdown-container {
     @include dFlex($gap: 20px);
     // flex-wrap: wrap;
+
+    @media (max-width: 830px) {
+        display: none;
+    }
 }
 
 .dropdown {
@@ -154,5 +158,30 @@ nav div a:hover:after {
             padding-bottom: 5px;
         }
     }
+}
 
+.burger-menu {
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+
+        path {
+            stroke: $darkBlue;
+        }
+    }
+
+    @media (max-width: 830px) {
+        display: block;
+    }
+}
+
+app-sidebar{
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    @media (min-width: 830px) {
+        display: none;
+    }
 }

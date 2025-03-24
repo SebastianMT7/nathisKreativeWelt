@@ -5,12 +5,13 @@ import { SingleProductComponent } from './single-product/single-product.componen
 import { ProductsService } from './services/products.service';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { Product } from '../models/product';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, SingleProductComponent, SlideshowComponent],
+  imports: [HeaderComponent, FooterComponent, SingleProductComponent, SlideshowComponent, SidebarComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
@@ -18,9 +19,9 @@ import { Product } from '../models/product';
 export class MainComponent implements OnInit {
   allProducts: any[] = [];
   filteredProducts: any[] = [];
-  filterService = inject(ProductsService);
   isFiltered: boolean = false;
   category = 'alle Produkte';
+  proService = inject(ProductsService)
 
   constructor(private productService: ProductsService) { }
 
@@ -31,24 +32,19 @@ export class MainComponent implements OnInit {
       // this.filteredProducts = data;
       this.allProducts = data.products.map(product => ({
         ...product,
-        mass: product.mass = this.findMass(product, data)
+        mass: product.mass = this.findMass(product, data.massStandard)
       }));
       this.filteredProducts = data.products.map(product => ({
         ...product,
-        mass: product.mass = this.findMass(product, data)
+        mass: product.mass = this.findMass(product, data.massStandard)
       }));
     });
     //console.log('allprodukte:', this.allProducts);
   }
 
-  findMass(product: Product, data: any) {
-    if (product.mass === "massDessertbecher") {
-      return data.massDessertbecher
-    } else if (product.mass === "massGlühweinkerzen") {
-      return data.massGlühweinkerzen
-    } else {
-      return product.mass
-    }
+  findMass(product: Product, massStandard: any) {
+   const filteredMass = massStandard.find((obj:any) => obj.hasOwnProperty(product.mass));
+   return filteredMass ? filteredMass[product.mass] : product.mass;
   }
 
   filterProducts(filter: { mainCategory: string; subCategory?: string }) {
