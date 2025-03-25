@@ -2,9 +2,9 @@
    <app-header (categorySelected)="filterProducts($event)"></app-header>
    <app-slideshow></app-slideshow>
 
-   <!-- @if (proService.menuOpen) {
-   <app-sidebar></app-sidebar>
-   } -->
+   @if (prodService.menuOpen) {
+   <app-sidebar (categorySelected)="filterProducts($event)"></app-sidebar>
+   }
 
    <div class="welcome-text">
       @if (isFiltered) {
@@ -19,9 +19,10 @@
    </div>
 
    <section>
-      @for (product of this.filteredProducts; track $index) {
-      <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product>
+      @for (product of this.filteredProducts | sortByName; track $index) {
+        <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product>
       }
-   </section>
+    </section>
+    
    <app-footer></app-footer>
 </div>

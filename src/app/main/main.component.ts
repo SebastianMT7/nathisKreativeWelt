@@ -6,12 +6,13 @@ import { ProductsService } from './services/products.service';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { Product } from '../models/product';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { SortByNamePipe } from './pipes/sort-by-name.pipe';
 
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, SingleProductComponent, SlideshowComponent, SidebarComponent],
+  imports: [HeaderComponent, FooterComponent, SingleProductComponent, SlideshowComponent, SidebarComponent, SortByNamePipe],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
@@ -21,7 +22,7 @@ export class MainComponent implements OnInit {
   filteredProducts: any[] = [];
   isFiltered: boolean = false;
   category = 'alle Produkte';
-  proService = inject(ProductsService)
+  prodService = inject(ProductsService)
 
   constructor(private productService: ProductsService) { }
 

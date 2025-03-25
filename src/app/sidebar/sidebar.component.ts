@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component,inject } from '@angular/core';
+import { Component, inject, EventEmitter, Output } from '@angular/core';
 import { ProductsService } from '../main/services/products.service';
 
 @Component({
@@ -15,7 +15,9 @@ export class SidebarComponent {
   selectedCategory: any = null;
   selectedSubCategory: any = null;
   currentCategory: string = 'Kategorien';
+  filterMainCategory: string = '';
   productService = inject(ProductsService)
+  @Output() categorySelected = new EventEmitter<{ mainCategory: string; subCategory?: string }>();
 
   categories = [
     {
@@ -24,22 +26,22 @@ export class SidebarComponent {
         {
           name: 'Standkerzen',
           subcategories: [
-            { name: 'Figuren'},
-            { name: 'Tiere'},
-            { name: 'Blumen'},
-            { name: 'Schlichte Schönheiten'}
+            { name: 'Figuren' },
+            { name: 'Tiere' },
+            { name: 'Blumen' },
+            { name: 'Schlichte Schönheiten' }
           ],
         },
         {
           name: 'Becherkerzen',
           subcategories: [
-            { name: 'Dessertbecher'},
-            { name: 'Gefüllte Behältnisse'}
+            { name: 'Dessertbecher' },
+            { name: 'Gefüllte Behältnisse' }
           ],
         },
         {
           name: 'Personalisierungen',
-          subcategories: [],
+          //subcategories: [],
         },
       ],
     },
@@ -50,7 +52,7 @@ export class SidebarComponent {
     {
       name: 'Keramik',
       subcategories: [
-        { name: 'Teelichthalter/ Döschen'}
+        { name: 'Teelichthalter/Döschen' }
       ],
     },
     {
@@ -65,15 +67,19 @@ export class SidebarComponent {
   ];
 
   selectCategory(category: any) {
-    this.selectedCategory = category;
-    this.currentCategory = category.name;
-    this.currentLevel = 1;
+    this.filterMainCategory = category.name;
+    if (category.subcategories.length > 0) {
+      //hier auf "category.subcategories" ändern wenn bei epoxidharz etas dazu kommt!! + HTML anpassen
+      this.selectedCategory = category;
+      this.currentCategory = category.name;
+      this.currentLevel = 1;
+    } else this.closeSidebar();
   }
 
   selectSubCategory(sub: any) {
     console.log('Geklickte Unterkategorie:', sub);
     console.log('Hat es subcategories?', sub.subcategories);
-    
+
     if (sub.subcategories) {
       this.selectedSubCategory = sub?.subcategories ? sub : null;
       this.currentLevel = this.selectedSubCategory ? 2 : 1;
@@ -83,14 +89,11 @@ export class SidebarComponent {
       this.closeSidebar();
     }
   }
-  
-  
 
   selectSubSubCategory(subSub: any) {
     console.log('Ausgewählte Unter-Unterkategorie:', subSub);
     this.currentCategory = subSub.name;
     this.closeSidebar();
-    // Hier könntest du z. B. ein Event auslösen, um die Produkte zu filtern
   }
 
   goBack() {
@@ -102,10 +105,18 @@ export class SidebarComponent {
       this.currentCategory = 'Kategorien';
       this.currentLevel = 0;
       this.selectedCategory = null;
+      this.filterMainCategory = '';
     }
   }
 
   closeSidebar() {
+    this.filterMainCategory = '';
     this.productService.menuOpen = false;
+  }
+
+  filterByCategory(mainCategory: string, subCategory?: string) {
+    console.log('mainCat:',mainCategory ,'subCat:', subCategory)
+    this.categorySelected.emit({ mainCategory, subCategory }); // Korrektur: Objekt senden
+    this.closeSidebar();
   }
 }

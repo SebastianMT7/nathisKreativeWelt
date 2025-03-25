@@ -1,63 +1,67 @@
 @import "../../styles.scss";
 
 .sidebar {
-    width: 250px;
-    background: #fff;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    border: 1px solid $lightBlue;
-    border-top: none;
-  
-    ul {
-      list-style: none;
-      padding: 0;
-  
-      li:not(:first-child) {
-        padding: 10px;
+  width: 200px;
+  background: #fff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $lightBlue;
+  border-top: none;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li:first-child {
+      svg path:hover {
         cursor: pointer;
-  
-        &:hover {
-          background:$lightBlue;
-          color: white;
-        }
+        fill: $lightBlue;
       }
     }
-  
-
   }
 
-  .sidebar-head{
-    @include dFlex($jc: space-between);
-    padding: 10px;
-    border-bottom: 1px solid $lightBlue;
+}
+
+.sidebar-head {
+  @include dFlex($jc: space-between);
+  padding: 10px;
+  border-bottom: 1px solid $lightBlue;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
+
+  p {
+    cursor: pointer;
+  }
+
+  .close-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
 
     &:hover {
-      background:white;
-      color: black;
-    }
-
-    p{
       cursor: pointer;
-    }
-
-    .close-btn {
-      background: transparent;
-      border: none;
-      font-size: 24px;
-
-      &:hover{
-        cursor: pointer;
-        color: $lightBlue;
-      }
-    }
-  
-    .back-btn {
-      font-weight: bold;
-
-      &:hover{
-        color: $lightBlue;
-      }
+      color: $lightBlue;
     }
   }
+}
+
+.sidebar-item{
+    @include dFlex($jc: space-between);
+    padding: 10px;
+    padding-right: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background: $lightBlue;
+      color: white;
+
+      svg path {
+        fill: white;
+      }
+    }
   
+}
