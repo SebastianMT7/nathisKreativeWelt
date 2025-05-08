@@ -1,8 +1,8 @@
 {
     "massStandard": [
         {
-            "massDessertbecher": "ca.14cm x 9cm",
-            "massGlühweinkerzen": "ca.7,5cm x 10cm"
+            "massDessertbecher": "14cm x 9cm",
+            "massGlühweinkerzen": "7,5cm x 10cm"
         }
     ],
 
@@ -35,7 +35,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher","Sommer"]
         },
         {
-          "title": "Kristall-Herz",
+          "title": "Kristall-Herz (kein Set)",
           "description": "Die neuen Kristall-Herz-Kerzen in stilvollen Farben sind da! 💕 Sie sorgen für eine gemütliche Atmosphäre und bringen einen Hauch von Eleganz in jedes Zuhause. 🕯️✨",
           "image": "/img/kristall-herz.jpg",
           "price": "10,00 €",
@@ -107,7 +107,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
-          "title": "Totenkopf",
+          "title": "Totenkopf (kein Set)",
           "description": "✨ Einzigartig und zeitlos ✨ Unsere Totenkopfkerze, in jeder Farbe erhältlich, verleiht deinem Raum das gewisse Etwas. 💀",
           "image": "/img/totenkopf.jpg",
           "price": "8,00 €",
@@ -161,7 +161,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
-        "title": "Mini-Eule",
+        "title": "Mini-Eule (kein Set)",
         "description": "Eulen-Fans aufgepasst: Diese Kerze ist ein Muss für eure Sammlung! Magische Atmosphäre garantiert 🦉🕯️",
         "image": "/img/mini-eule.jpg",
         "price": "2,00 €",
@@ -283,8 +283,8 @@
         "image": "/img/ginkgo-teller.jpg",
         "price": "5,00 €",
         "mass": "2cm x 18,5cm x 12,5cm",
-        "mainCategory": ["Kerzen","Epoxidharz","Keramik","Saison"],
-        "subCategories": ["Becherkerzen","gefüllte Behältnisse","Sommer"]
+        "mainCategory": ["Keramik","Saison"],
+        "subCategories": ["Sommer"]
       },
       {
         "title": "Kleine Vase",
@@ -332,7 +332,7 @@
         "subCategories": ["Standkerzen","Figuren","Valentinstag"]
       },
       {
-        "title": "Kissen-Bubble",
+        "title": "Kissen-Bubble (kein Set)",
         "description": "Entspannung pur: Diese Kerze sieht nicht nur aus wie ein kuscheliges Kissen, sondern verbreitet auch noch einen herrlichen Duft. Perfekt für gemütliche Abende zuhause! 🕯️💕 Kissen-Bubblekerze 🧘‍♂️🧘",
         "image": "/img/kissen-bubble.jpg",
         "price": "5,00 €",
@@ -396,7 +396,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
-        "title": "Kleine Bubble",
+        "title": "Kleine Bubble (kein Set)",
         "description": "Die kleine Bubblekerze mit wunderschönem Farbverlauf 🌈✨",
         "image": "/img/kleine-bubble.jpg",
         "price": "2,00 €",
@@ -441,7 +441,7 @@
         "subCategories": ["Teelichthalter/Döschen"]
       },
       {
-        "title": "Lotushalter",
+        "title": "Lotushalter (kein Set)",
         "description": "🌸🕯️Schaffe eine Atmosphäre der Ruhe und Gelassenheit in deinem Zuhause mit dem handgemachten Lotus-Teelichthalter in Marmoroptik 🕯️🌸Dieser wunderschöne Kerzenhalter in Form einer Lotusblüte bietet eine stilvolle und beruhigende Präsentation für ein Teelicht. So wird dein Wohnzimmer zu einer Oase der Entspannung ✨💕",
         "image": "/img/lotushalter.jpg",
         "price": "4,00 €",
@@ -513,7 +513,7 @@
         "subCategories": ["Standkerzen","Blumen","Valentinstag"]
       },
       {
-        "title": "Rosenblüte",
+        "title": "Rosenblüte (kein Set)",
         "description": "Wie wäre es mit einer Rosenblüte als Kerze? 🌹✨ Die handgefertigten Schönheiten bringen Licht und Eleganz in jeden Raum. Erhältlich in verschiedenen Farben.",
         "image": "/img/rosenblüte.jpg",
         "price": "3,00 €",
@@ -646,6 +646,105 @@
         "mass": "6 cm x 14,5 cm x 7 cm",
         "mainCategory": ["Kerzen","Epoxidharz"],
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
+      },
+      {
+        "title": "Löffeleier Set",
+        "description": "Frühlingszauber trifft Osterfreude! 🌸🐰 Diese süßen Hasenkerzen sind das perfekte Highlight für deine Frühlingsdeko. Welche Farbe würdest du dir wünschen? 💕✨",
+        "image": "/img/loeffeleier-set.jpg",
+        "price": "12,00 €",
+        "mass": "9,5 cm x 6,5 cm x 6,5 cm",
+        "mainCategory": ["Kerzen","Saison"],
+        "subCategories": ["Stankerzen","Figuren","Ostern"]
+      },
+      {
+        "title": "Kerzenstrauß",
+        "description": "Ein Strauß, der für immer bleibt! ✨ Diese handgegossenen Blumenkerzen bringen warmes Licht und stilvolle Deko in jeden Raum. Die Keramikvase ist ebenfalls selbstgemacht – ein echtes Unikat! 🌿🕯️",
+        "image": "/img/kerzenstrauss.jpg",
+        "price": "20,00 €",
+        "mass": "34 cm x 23 cm x 23 cm",
+        "mainCategory": ["Kerzen","Keramik","Saison"],
+        "subCategories": ["Stankerzen","Blumen","Sommer"]
+      },
+      {
+        "title": "Kerzen - Pilz",
+        "description": "Direkt aus dem Feenwald zu dir nach Hause! 🍄✨ Diese handgegossene Kerze verbirgt sich in einem schimmernden Pilz-Behälter aus Epoxidharz – wie ein kleines Geheimnis aus einer anderen Welt. Perfekt für magische Momente und gemütliche Abende! 🕯️🌿",
+        "image": "/img/kerzen-pilz.jpg",
+        "price": "12,00 €",
+        "mass": "8,5 cm x 8,5 cm x 8,5 cm",
+        "mainCategory": ["Kerzen","Epoxidharz","Saison"],
+        "subCategories": ["Becherkerzen","gefüllte Behältnisse","Sommer"]
+      },
+      {
+        "title": "Osterdöschen",
+        "description": "Kunst trifft Funktion ✨ Dieses handgefertigte Döschen aus glänzendem Epoxidharz ist nicht nur ein echter Hingucker – auf Wunsch wird es zur stilvollen Kerze mit individuellem Duft 🕯️Jedes Stück ist ein Unikat 🖤 Perfekt als Geschenk oder als besonderer Akzent für dein Zuhause 🏡",
+        "image": "/img/osterdoeschen.jpg",
+        "price": "12,00 €",
+        "mass": "11 cm x 7 cm x 7 cm",
+        "mainCategory": ["Kerzen","Epoxidharz","Saison"],
+        "subCategories": ["Becherkerzen","gefüllte Behältnisse","Ostern"]
+      },
+      {
+        "title": "Seifenspender",
+        "description": "Dieser selbstgemachte Seifenspender aus Epoxidharz bringt Glanz, Glam & ganz viel Persönlichkeit ins Spiel! Wer sagt, dass Alltagsgegenstände langweilig sein müssen? ✨🧼💫",
+        "image": "/img/seifenspender.jpg",
+        "price": "15,00 €",
+        "mass": "17 cm x 7 cm x 7 cm",
+        "mainCategory": ["Epoxidharz"],
+        "subCategories": []
+      },
+      {
+        "title": "Muschelwürfel",
+        "description": "Ein Hauch von Meer in deinem Zuhause 🌊 Diese handgegossene Kerze 🕯️ steckt in einem liebevoll gestalteten Döschen aus Epoxidharz – verziert mit echten kleinen Muscheln 🐚 und einem passenden Deckel. Perfekt für entspannte Abende oder als besonderes Deko-Highlight.",
+        "image": "/img/muschelwuerfel.jpg",
+        "price": "12,00 €",
+        "mass": "6,5 cm x 6,5 cm x 6,5 cm",
+        "mainCategory": ["Kerzen","Epoxidharz"],
+        "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
+      },
+      {
+        "title": "Dog Heart",
+        "description": "Wenn Liebe eine Form hätte… wäre sie genau das! ❤️‍🔥 Ein Herz, ein Hund, ein Licht – handgegossen aus Epoxidharz, gemacht für Seelenwärmer-Momente. 🐾🕯️ Für alle, die wissen: Zuhause ist, wo die Pfote ist.",
+        "image": "/img/dog-heart.jpg",
+        "price": "8,00 €",
+        "mass": "11 cm x 10,5 cm x 9,5 cm",
+        "mainCategory": ["Kerzen","Epoxidharz"],
+        "subCategories": []
+      },
+      {
+        "title": "Froschkerze",
+        "description": "Diese süße Froschkerze 🐸 ist nicht nur ein echter Hingucker – sie wurde liebevoll von Hand gegossen und bemalt 🖐️🎨! Jedes Stück ist ein kleines Unikat und bringt sofort gute Laune 🌟. Wer würde sie sich auch ins Regal stellen? 🕯️✨",
+        "image": "/img/froschkerze.jpg",
+        "price": "5,00 €",
+        "mass": "6,5 cm x 5 cm x 3,5 cm",
+        "mainCategory": ["Kerzen"],
+        "subCategories": ["Standkerzen","Tiere"]
+      },
+      {
+        "title": "Muttertags Herz",
+        "description": "Zum Muttertag etwas ganz Besonderes: Ein handgefertigtes Herz aus Epoxidharz ❤️ – mit Platz für euer Lieblingsfoto im Inneren! Ein einzigartiges Geschenk, das von Herzen kommt und für immer bleibt ✨📸💝",
+        "image": "/img/muttertags-herz.jpg",
+        "price": "15,00 €",
+        "mass": "14 cm x 17 cm x 8 cm",
+        "mainCategory": ["Epoxidharz"],
+        "subCategories": []
+      },
+      {
+        "title": "Donut Dessert",
+        "description": "Bunte Donut-Dessert-Kerzen 🍩🕯️ – so süß, dass man zweimal hinschauen muss! Der Docht ist raffiniert in der Sahne versteckt 🍦 – ein echter Hingucker für jede Deko! 💖",
+        "image": "/img/donut-dessert.jpg",
+        "price": "6,00 €",
+        "mass": "9 cm x 7,5 cm x 7,5 cm",
+        "mainCategory": ["Kerzen"],
+        "subCategories": ["Becherkerzen","Dessertbecher"]
+      },
+      {
+        "title": "Buntes Lesezeichen",
+        "description": "Bunte Lesezeichen aus Epoxidharz ✨📚 Jedes Stück ist ein handgemachtes Unikat – in vielen Farben erhältlich! Perfekt für dein Lieblingsbuch oder als liebevolles Geschenk 🎁💖 Welches ist dein Favorit?",
+        "image": "/img/buntes-lesezeichen.jpg",
+        "price": "4,00 €",
+        "mass": "14 cm x 2,5 cm x 0,5 cm",
+        "mainCategory": ["Epoxidharz"],
+        "subCategories": []
       }
     ]
 }

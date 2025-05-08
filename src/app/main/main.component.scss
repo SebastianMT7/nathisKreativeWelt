@@ -25,6 +25,10 @@ section {
     h2 {
        // text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    img {
+        height: 16px;
+    }
 }
 
 app-single-product{    
@@ -33,15 +37,4 @@ app-single-product{
 
 app-slideshow {
     margin-top: 100px;
-}
-
-app-sidebar{
-    position: fixed;
-    top: 100px;
-    right: 0;
-    z-index: 1;
-
-    @media (min-width: 830px) {
-        display: none;
-    }
 }

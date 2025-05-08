@@ -1,28 +1,35 @@
 <div class="content">
-   <app-header (categorySelected)="filterProducts($event)"></app-header>
    <app-slideshow></app-slideshow>
 
-   @if (prodService.menuOpen) {
-   <app-sidebar (categorySelected)="filterProducts($event)"></app-sidebar>
-   }
-
    <div class="welcome-text">
-      @if (isFiltered) {
+      @if (productService.isFiltered) {
       <div>
          <h2>Meine Angebote für Sie im Bereich</h2>
-         <h2> {{category}}</h2>
-         <span>({{this.filteredProducts.length}} Artikel)</span>
+         <h2> {{productService.category}}</h2>
+         <span>({{productService.filteredProducts().length}} Artikel)</span>
       </div>
       } @else {
-      <h2>Willkommen auf meiner Seite. Schauen Sie sich gerne in Ruhe um.</h2>
+      <div>
+         <h2>Willkommen auf meiner Seite. Schauen Sie sich gerne in Ruhe um.</h2>
+         <span>Bei Bestelllungen oder weiteren Fragen erreichen Sie mich über
+            <img src="/icons/whatsapp-logo.png" alt="whatsapp-logo"> 01775845705.</span>
+         <span>({{productService.filteredProducts().length}} Artikel)</span> <!-- wieder löschen!! -->
+      </div>
       }
    </div>
 
    <section>
-      @for (product of this.filteredProducts | sortByName; track $index) {
-        <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product>
+      @for (product of productService.filteredProducts() | sortByName; track $index) {
+      <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product>
       }
-    </section>
-    
-   <app-footer></app-footer>
+      <!-- @for (product of visibleProducts() | sortByName; track $index) {
+         <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product>
+         }
+         @if (productService.filteredProducts().length > visibleCount()) {
+   
+         <button (click)="loadMoreProducts()" class="btn-load-more">
+            Weitere Produkte laden
+         </button>
+         } -->
+   </section>
 </div>

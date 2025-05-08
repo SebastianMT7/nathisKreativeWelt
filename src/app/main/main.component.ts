@@ -1,79 +1,52 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
+import { Component, inject, OnInit,signal,computed } from '@angular/core';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { ProductsService } from './services/products.service';
 import { SlideshowComponent } from './slideshow/slideshow.component';
-import { Product } from '../models/product';
-import { SidebarComponent } from '../sidebar/sidebar.component';
 import { SortByNamePipe } from './pipes/sort-by-name.pipe';
 
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, SingleProductComponent, SlideshowComponent, SidebarComponent, SortByNamePipe],
+  imports: [SingleProductComponent, SlideshowComponent, SortByNamePipe],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
 
 export class MainComponent implements OnInit {
-  allProducts: any[] = [];
-  filteredProducts: any[] = [];
-  isFiltered: boolean = false;
-  category = 'alle Produkte';
-  prodService = inject(ProductsService)
+  productService = inject(ProductsService)
+  visibleCount = signal(20); // Start mit 20 Produkten
 
-  constructor(private productService: ProductsService) { }
+  constructor() { }
 
   ngOnInit() {
-    //console.log('allprodukte:', this.allProducts);
-    this.productService.getProducts().subscribe(data => {
-      // this.allProducts = data;
-      // this.filteredProducts = data;
-      this.allProducts = data.products.map(product => ({
-        ...product,
-        mass: product.mass = this.findMass(product, data.massStandard)
-      }));
-      this.filteredProducts = data.products.map(product => ({
-        ...product,
-        mass: product.mass = this.findMass(product, data.massStandard)
-      }));
-    });
-    //console.log('allprodukte:', this.allProducts);
-  }
+    const data = this.productService.productsSignal();
 
-  findMass(product: Product, massStandard: any) {
-   const filteredMass = massStandard.find((obj:any) => obj.hasOwnProperty(product.mass));
-   return filteredMass ? filteredMass[product.mass] : product.mass;
-  }
-
-  filterProducts(filter: { mainCategory: string; subCategory?: string }) {
-    //console.log('mainCategory:', filter.mainCategory);
-    if (filter.mainCategory === 'allProducts') {
-      this.filteredProducts = [...this.allProducts];
-      this.category = 'alle Produkte';
-      //console.log('MainProdukte:', this.filteredProducts);
-      this.isFiltered = false;
-    } else {
-      this.filterToCategorys((filter.mainCategory), (filter.subCategory))
-    }
-  }
-
-  filterToCategorys(mainCategory: string, subCategory?: string) {
-    if (!subCategory) {
-      this.filteredProducts = this.allProducts.filter(product => product.mainCategory.includes(mainCategory));
-      this.category = (mainCategory);
-      //console.log('MainProdukte:', this.filteredProducts);
-    } else {
-      this.filteredProducts = this.allProducts.filter(product =>
-        product.mainCategory.includes(mainCategory) && product.subCategories.includes(subCategory)
+    if (data) {
+      this.productService.allProducts.set(
+        data.products.map(product => ({
+          ...product,
+          mass: this.productService.findMass(product, data.massStandard)
+        }))
       );
-      this.category = `${mainCategory} (${subCategory})`;
-      //console.log('Sub:', subCategory);
-      //console.log('SubProdukte:', this.filteredProducts);
+
+      // Beim Init: zuletzt gewählten Filter anwenden, wenn vorhanden
+      const lastFilter = this.productService.selectedCategory();
+      if (lastFilter) {
+        this.productService.filterProducts(lastFilter); // oder filterProducts()
+      } else {
+        this.productService.filteredProducts.set(this.productService.allProducts());
+      }
     }
-    this.isFiltered = true;
+  }  
+
+  // Produkte auf die Anzahl beschränken
+  visibleProducts = computed(() =>
+    this.productService.filteredProducts().slice(0, this.visibleCount())
+  );
+
+  loadMoreProducts() {
+    this.visibleCount.update(count => count + 20);
   }
 
 }

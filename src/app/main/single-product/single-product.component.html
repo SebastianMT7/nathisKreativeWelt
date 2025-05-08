@@ -2,16 +2,16 @@
     <div class="img-div">
         <img src="{{currentProduct.image}}" alt="">
     </div>
-    <div class="info">
+    <!-- <div class="info" [ngStyle]="{'padding-left': '20px'}"> -->
+    <div class="info" [ngStyle]="{'padding-left': '20px'}">
         <span>{{currentProduct.title}}</span>
         <span>Preis: {{currentProduct.price}}</span>
         <div class="mass-div">
-            <span>Maße:</span> 
-            <span>{{currentProduct.mass}}</span> 
+            <span>Maße:</span>
+            <span>ca. {{currentProduct.mass}} </span>
         </div>
     </div>
 </div>
-
 
 @if (showDetailCard) {
 <div class="overlay">

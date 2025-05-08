@@ -6,12 +6,10 @@
         <div class="dropdown" [ngStyle]="{'position': 'static'}">
             <nav>
                 <div (mouseenter)="openDropdown(1)" (click)="filterByCategory('Kerzen')" class="dropdown-button">
-                    <a href="#">Kerzen</a>
+                    <!-- <a href="#">Kerzen</a> -->
+                    <a [routerLink]="['']">Kerzen</a>
                 </div>
             </nav>
-            <!-- <button (click)="openDropdown(1)" class="dropdown-button">
-                <a href="#">Kerzen</a>
-            </button> -->
             <div class="container-menu" *ngIf="dropdownOpen[1]">
                 <ul>
                     <li (click)="filterByCategory('Kerzen','Standkerzen')">Standkerzen</li>
@@ -19,6 +17,7 @@
                     <li (click)="filterByCategory('Kerzen','Tiere')">Tiere</li>
                     <li (click)="filterByCategory('Kerzen','Blumen')">Blumen</li>
                     <li (click)="filterByCategory('Kerzen','schlichte Schönheiten')">schlichte Schönheiten</li>
+
                 </ul>
                 <ul>
                     <li (click)="filterByCategory('Kerzen','Becherkerzen')">Becherkerzen</li>
@@ -33,7 +32,8 @@
         <div class="dropdown">
             <nav>
                 <div (mouseenter)="openDropdown(2)" (click)="filterByCategory('Epoxidharz')" class="dropdown-button">
-                    <a href="#">Epoxidharz</a>
+                    <!-- <a href="#">Epoxidharz</a> -->
+                    <a [routerLink]="['']">Epoxidharz</a>
                 </div>
             </nav>
             <!-- <ul *ngIf="dropdownOpen[2]" class="dropdown-menu">
@@ -65,6 +65,7 @@
             <ul *ngIf="dropdownOpen[4]" class="dropdown-menu">
                 <li (click)="filterByCategory('Saison','Valentinstag')">Valentinstag</li>
                 <li (click)="filterByCategory('Saison','Ostern')">Ostern</li>
+                <li (click)="filterByCategory('Saison','Sommer')">Sommer</li>
                 <li (click)="filterByCategory('Saison','Herbst/Halloween')">Herbst/Halloween</li>
                 <li (click)="filterByCategory('Saison','Winter/Weihnachten')">Winter/Weihnachten</li>
             </ul>
@@ -78,8 +79,8 @@
             <path d="M1 30H31" stroke="lightBlue" stroke-width="3" stroke-linecap="round" />
         </svg>
     </div>
-
-    <!-- @if (productService.menuOpen) {
-    <app-sidebar></app-sidebar>
-    } -->
 </header>
+
+@if (productService.menuOpen) {
+    <app-sidebar (categorySelected)="productService.filterProducts($event)"></app-sidebar>
+    }

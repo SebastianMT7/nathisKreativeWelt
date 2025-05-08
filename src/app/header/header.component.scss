@@ -44,6 +44,8 @@ header {
     border: none;
     cursor: pointer;
     font-size: 20px;
+    // font-family: "Edu SA Beginner";
+    // font-weight: 700;
 
     &:hover {
         //background-color: $darkBlue;
@@ -176,6 +178,17 @@ nav div a:hover:after {
     }
 }
 
+app-sidebar{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+
+    @media (min-width: 830px) {
+        display: none;
+    }
+}
+
 // app-sidebar{
 //     position: absolute;
 //     top: 100px;
@@ -185,3 +198,46 @@ nav div a:hover:after {
 //         display: none;
 //     }
 // }
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../../public/fonts/cookie-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+  /* edu-sa-beginner-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Edu SA Beginner';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../../public/fonts/edu-sa-beginner-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* edu-sa-beginner-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Edu SA Beginner';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../../public/fonts/edu-sa-beginner-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* edu-sa-beginner-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Edu SA Beginner';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../../../public/fonts/edu-sa-beginner-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* edu-sa-beginner-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Edu SA Beginner';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../../../public/fonts/edu-sa-beginner-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  

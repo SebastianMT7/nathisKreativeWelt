@@ -30,7 +30,6 @@
 
 .info {
     @include dFlex($fd: column, $ai: flex-start, $gap: 5px);
-    padding-left: 20px;
 
     .mass-div{
         @include dFlex($jc: flex-end, $ai: flex-start, $gap: 5px);
@@ -54,6 +53,9 @@
     max-width: 500px;
     border-radius: 20px;
     padding: 20px;
+    h2{
+        padding-bottom: 10px;
+    }
 }
 
 .close {

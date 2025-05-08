@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, EventEmitter, Output } from '@angular/core';
 import { ProductsService } from '../main/services/products.service';
+import { RouterLink,Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -60,16 +61,19 @@ export class SidebarComponent {
       subcategories: [
         { name: 'Valentinstag' },
         { name: 'Ostern' },
+        { name: 'Sommer' },
         { name: 'Herbst/Halloween' },
         { name: 'Winter/Weihnachten' },
       ],
     },
   ];
 
+  constructor(private router: Router) {}
+
   selectCategory(category: any) {
     this.filterMainCategory = category.name;
     if (category.subcategories.length > 0) {
-      //hier auf "category.subcategories" ändern wenn bei epoxidharz etas dazu kommt!! + HTML anpassen
+      //hier auf "category.subcategories" ändern wenn bei epoxidharz etwas dazu kommt!! + HTML anpassen
       this.selectedCategory = category;
       this.currentCategory = category.name;
       this.currentLevel = 1;
@@ -117,6 +121,13 @@ export class SidebarComponent {
   filterByCategory(mainCategory: string, subCategory?: string) {
     console.log('mainCat:',mainCategory ,'subCat:', subCategory)
     this.categorySelected.emit({ mainCategory, subCategory }); // Korrektur: Objekt senden
+    this.navigateToMain();
     this.closeSidebar();
+  }
+
+  navigateToMain() {
+    this.router.navigate(['']).then(() => {
+      window.scrollTo(0, 0);
+    });
   }
 }
