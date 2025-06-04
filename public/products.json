@@ -7,7 +7,8 @@
     ],
 
     "products": [
-        {
+
+        {   "id": 1,
             "title": "Beach-Becher",
             "description": "Erlebe die zauberhafte Magie mit dem Beach-Becher! 🐢🌊✨ Diese handgefertigte Schönheit, verziert mit einer entzückenden Schildkröte, einem strahlenden Seestern und einer zarten Muschel, fängt den Charme des Ozeans perfekt ein. Lass den Duft des Meeres dein Zuhause verzaubern und träume dich an den Strand! 🌴🕯️",
             "image": "/img/beach-becher.jpg",
@@ -17,6 +18,7 @@
             "subCategories": ["Becherkerzen","Sommer"]
         },
         {
+          "id": 2,
           "title": "Rosie",
           "description": "Ein Hauch von Luxus: Die schwebende Rosenkerze Rosie auf glitzernden Goldflocken bringt magisches Flair in dein Zuhause. 🌹✨",
           "image": "/img/rosie.jpg",
@@ -26,6 +28,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher","Valentinstag"]
         },
         {
+          "id": 3,
           "title": "Meerjungfrauen-Becher",
           "description": "🧜‍♀️🕯 Lass dich verzaubern von der mystischen Schönheit der handgemachten Meerjungfrauenkerze! 🕯🧜‍♀️Die einzigartige Kerze, inspiriert von den Legenden der Meerjungfrauen, bringt eine wundersame und verträumte Atmosphäre in dein Zuhause. Mit ihren filigranen Details und dem sanften Licht entführt sie dich in eine Welt voller Magie und Geheimnisse der Tiefsee. Perfekt für alle, die das Fantastische lieben und ihrem Raum eine besondere, märchenhafte Note verleihen möchten. 🧜‍♀️⭐",
           "image": "/img/meerjungfrauen-becher.jpg",
@@ -35,6 +38,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher","Sommer"]
         },
         {
+          "id": 4,
           "title": "Kristall-Herz (kein Set)",
           "description": "Die neuen Kristall-Herz-Kerzen in stilvollen Farben sind da! 💕 Sie sorgen für eine gemütliche Atmosphäre und bringen einen Hauch von Eleganz in jedes Zuhause. 🕯️✨",
           "image": "/img/kristall-herz.jpg",
@@ -44,6 +48,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
+          "id": 5,
           "title": "Pfoten-Dessert",
           "description": "Du liebst Tiere? 🐾✨ Dann ist diese handgefertigte Kerze perfekt für dich! Und das Beste: Sie kann in jeder deiner Lieblingsfarben angefertigt werden. Mach dein Zuhause gemütlich und bunt! 🌈🕯️",
           "image": "/img/pfoten-dessert.jpg",
@@ -53,6 +58,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
+          "id": 6,
           "title": "Astronauten-Becher",
           "description": "🌌✨ Eine Dessertkerze wie aus einer anderen Galaxie! 🪐🌠 Mit funkelnden Sternen, einem mutigen Astronauten auf dem Mond und einem vorbeiziehenden Kometen - fast zu schön zum Anzünden! 🚀💫",
           "image": "/img/astronaut-becher.jpg",
@@ -62,6 +68,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
+          "id": 7,
           "title": "Blueberry-Pancake-Becher",
           "description": "Liebst du auch frische Pancakes? 😋 Diese Kerze erfüllt den Raum mit einem tollen Blueberry-Pancake-Aroma! 🫐🥞",
           "image": "/img/blueberry-pancake-becher.jpg",
@@ -71,6 +78,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
+          "id": 8,
           "title": "Törtchen",
           "description": "Ein Fest für Augen und Nase! Diese zauberhafte Törtchen-Kerze, verziert mit einer Waffel und Mini-Donuts, verbreitet einen himmlischen Duft, der jeden Raum verzaubert. Perfekt für alle, die das Besondere lieben! 🧁✨ ",
           "image": "/img/törtchen.jpg",
@@ -80,6 +88,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
+          "id": 9,
           "title": "Mond-Sterne-Becher",
           "description": "✨ Lass dich von der Galaxie verzaubern! Die handgemachte Mond-Sterne-Becherkerze bringt den Zauber des Nachthimmels direkt in dein Zuhause. 🌙⭐ Perfekt für magische Abende und traumhafte Momente. ✨",
           "image": "/img/mond-sterne-becher.jpg",
@@ -89,6 +98,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
+          "id": 10,
           "title": "Kuchen-Kerze",
           "description": "Verwandle dein Zuhause in eine duftende Kuchenbäckerei! 🍰✨ Die handgemachte Kerze gibt es in verschiedenen Farben und mit lecker aussehenden Toppings – dein Lieblingskuchen als Kerze, der niemals verdirbt. Perfekt für eine Extraportion Gemütlichkeit. 🕯️💕",
           "image": "/img/kuchen-kerze.jpg",
@@ -98,6 +108,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
+          "id": 11,
           "title": "Mandarine-Becher",
           "description": "🍊🎄 Der Geschmack von Weihnachten, neu interpretiert: Der Mandarine-Becher ist nicht nur ein Fest für die Augen, sondern erfüllt dein Zuhause mit gemütlichem Winterflair. Handgemacht, einzigartig und voller Liebe – perfekt für zauberhafte Momente oder als besonderes Geschenk. 🕯️✨",
           "image": "/img/mandarine-becher.jpg",
@@ -107,6 +118,7 @@
           "subCategories": ["Becherkerzen","Dessertbecher"]
         },
         {
+          "id": 12,
           "title": "Totenkopf (kein Set)",
           "description": "✨ Einzigartig und zeitlos ✨ Unsere Totenkopfkerze, in jeder Farbe erhältlich, verleiht deinem Raum das gewisse Etwas. 💀",
           "image": "/img/totenkopf.jpg",
@@ -116,6 +128,7 @@
           "subCategories": ["Standkerzen","Figuren","Herbst/Halloween"]
         },        
         {
+          "id": 13,
         "title": "Totenkopf mit Schlange",
         "description": "Ein faszinierender Anblick: Diese Totenkopfkerze wird von einer Schlange umwickelt und sorgt für eine mystische, aber elegante Atmosphäre. 💀🐍",
         "image": "/img/totenkopf-mit-schlange.jpg",
@@ -125,6 +138,7 @@
         "subCategories": ["Standkerzen","Figuren","Herbst/Halloween"]
       },    
       {
+        "id": 14,
         "title": "Wandelnder Geist",
         "description": "Boo! 👻 Diese wandelnde Geisterkerze ist bereit, dir ein schaurig-schönes Licht zu spenden. Zeit, sich langsam auf Halloween einzustimmen – es ist näher als du denkst! 🕯🎃",
         "image": "/img/wandelnder-geist.jpg",
@@ -134,6 +148,7 @@
         "subCategories": ["Standkerzen","Figuren","Herbst/Halloween" ]
       },
       {
+        "id": 15,
         "title": "Teddy mit Herz",
         "description": "Ein Teddy mit Herz: Die perfekte Mischung aus Liebe und Licht 🧸❤️",
         "image": "/img/teddy-mit-herz.jpg",
@@ -143,6 +158,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 16,
         "title": "Eulen-Set",
         "description": "Für alle Eulenfans da draußen: Diese süßen Eulenkerzen bringen nicht nur Licht, sondern auch eine zauberhafte Atmosphäre in euer Zuhause! 🦉✨ Zusammen entfalten sie ihren vollen Charme.",
         "image": "/img/eulen-set.jpg",
@@ -152,6 +168,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 17,
         "title": "Igel",
         "description": "🦔🕯️ Verzaubere dein Zuhause mit der süßen Igel-Kerze! 🕯️🦔Diese niedliche Kerze in Form von einem Igel mit großen, funkelnden Augen und detaillierten Stacheln bringt einen Hauch von Waldzauber in jeden Raum. Perfekt als dekoratives Highlight oder als einzigartiges Geschenk, schafft sie eine warme und einladende Atmosphäre. Lass das charmante Licht dieser Igel-Kerze dein Zuhause erhellen und für unvergessliche, gemütliche Abende sorgen. 🌟✨",
         "image": "/img/igel.jpg",
@@ -161,6 +178,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 18,
         "title": "Mini-Eule (kein Set)",
         "description": "Eulen-Fans aufgepasst: Diese Kerze ist ein Muss für eure Sammlung! Magische Atmosphäre garantiert 🦉🕯️",
         "image": "/img/mini-eule.jpg",
@@ -170,6 +188,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 19,
         "title": "Katze",
         "description": "Diese süße Katzenkerze ist der perfekte Begleiter für gemütliche Abende! 🕯️🐱 Mit ihren rosa Ohren und dem niedlichen Gesicht bringt sie jedes Herz zum Schmelzen. Ein Must-Have für Katzenliebhaber! 😻✨",
         "image": "/img/katze.jpg",
@@ -179,6 +198,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 20,
         "title": "Niedliche Katze",
         "description": "🌟🐱 Lass dich von der unendlichen Süße dieser Katzenkerze verzaubern! Mit ihren großen, liebevollen Augen und dem zarten, detaillierten Fell scheint sie direkt aus einem Märchen zu stammen. Ihr Blick lässt dein Herzen schmelzen und verwandelt jeden Raum in eine Oase der Gemütlichkeit. 🕯️💖",
         "image": "/img/niedliche-katze.jpg",
@@ -188,6 +208,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 21,
         "title": "Teddyhund",
         "description": "Kleine Freude, große Wirkung! Diese entzückende Hundekerze bringt Licht und Wärme in jede Ecke. Perfekt für alle Hundeliebhaber 🐶🕯️",
         "image": "/img/teddyhund.jpg",
@@ -197,6 +218,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 22,
         "title": "Alpaka",
         "description": "🦙🕯️ Hol dir den coolsten Deko-Hit mit der unwiderstehlichen Alpaka-Kerze! 🕯️🦙Diese einzigartige Kerze ist der perfekte Mix aus Spaß und Stil. Mit ihrem frechen Look und den detaillierten Strukturen zieht sie alle Blicke auf sich und sorgt für Gespräche. Ob als witziges Geschenk oder als Highlight in deiner Einrichtung – diese Alpakas sind einfach Kult! Lass dein Zuhause mit dieser außergewöhnlichen Kerze strahlen und erlebe, wie sie jeden Raum aufpeppt. 🌟✨",
         "image": "/img/alpaka.jpg",
@@ -206,6 +228,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 23,
         "title": "Hamster",
         "description": "🐹✨ Hamster-Flair für dein Zuhause! ✨🐹Mach es dir gemütlich mit der zuckersüßen Hamster-Kerze! Diese handgefertigte Schönheit mit rosigen Bäckchen und putzigen Öhrchen bringt tierischen Charme in jeden Raum. Perfekt zum Verschenken oder selber genießen!🕯️💖",
         "image": "/img/hamster.jpg",
@@ -215,6 +238,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 24,
         "title": "Pingu",
         "description": "Hallo, ich bin Pingu 🐧 – die süßeste Kerze, die du je gesehen hast! Mit meiner kuscheligen Mütze und den kleinen Herz-Details bringe ich Wärme und Stil in dein Zuhause. Perfekt für die kalten Tage und ein tolles Geschenk! 🕯️💖 ",
         "image": "/img/pingu.jpg",
@@ -224,6 +248,7 @@
         "subCategories": ["Standkerzen","Tiere","Winter/Weihnachten"]
       },
       {
+        "id": 25,
         "title": "Epoxi-Kerze",
         "description": "Lass dich von der Magie dieser handgegossenen Kerze verzaubern! 🕯️💫 Das schimmernde Epoxidharz-Gefäß, selbst kreiert, bringt nicht nur Licht, sondern auch einen Hauch von Eleganz in dein Zuhause. Perfekt für entspannte Abende und besondere Momente. ✨🌸",
         "image": "/img/epoxi-kerze.jpg",
@@ -233,6 +258,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 26,
         "title": "Yin-Yang-Kerze",
         "description": "🌸 Balance in Duft und Form 🌸🕯️☯️ Bringe Harmonie und Ausgeglichenheit in dein Zuhause mit der handgemachten Yin-Yang-Kerze! ☯️🕯️ Diese wunderschöne Kerze, gestaltet in der symbolischen Form des Yin und Yang, schafft eine beruhigende und harmonische Atmosphäre. Perfekt für Meditation, Yoga oder einfach für mehr Balance im Alltag. Das liebevoll aus Gips gestaltete Gefäß hält diese besondere Kerze. Lass das sanfte Licht dein Zuhause erhellen und für innere Ruhe sorgen. ✨",
         "image": "/img/ying-yang-kerze.jpg",
@@ -242,6 +268,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse","Valentinstag"]
       },
       {
+        "id": 27,
         "title": "Karo-Schale",
         "description": "Zeitlos und stilvoll – die handgefertigte Schale mit subtilen Mustern bringt ein elegantes Flair in dein Zuhause. Ob als Teelichthalter oder Aufbewahrung für deinen Lieblingsschmuck, sie ist ein echtes Highlight! ✨🌿",
         "image": "/img/karo-schale.jpg",
@@ -251,6 +278,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 28,
         "title": "Muschelschale",
         "description": "🌊✨ Diese wunderschöne Schale sieht aus wie eine echte Muschel! 🐚 Sie ist groß genug, um als auffällige Schmuckschale zu dienen oder du lässt sie als einzigartige Kerze anfertigen. Ein vielseitiger Hingucker für dein Zuhause! 🕯💍",
         "image": "/img/muschelschale.jpg",
@@ -260,6 +288,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse","Sommer"]
       },
       {
+        "id": 29,
         "title": "Zauberhaftes Döschen",
         "description": "Dieses zauberhafte Döschen ist bereit, deine kleinen Schätze sicher zu verwahren oder als duftende Kerze für eine stimmungsvolle Atmosphäre zu sorgen. ✨🔒 Wo Kreativität und Funktionalität verschmelzen!",
         "image": "/img/zauberhaftes-döschen.jpg",
@@ -269,6 +298,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 30,
         "title": "Pfoten-Döschen",
         "description": "Entdecke die süßen Pfoten-Döschen – perfekt für kleine Schätze oder als bezaubernde Kerze erhältlich! 🐾✨",
         "image": "/img/pfoten-döschen.jpg",
@@ -278,6 +308,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 31,
         "title": "Ginkgo-Teller",
         "description": "Handgemacht und einzigartig! 🌿 Dieser neue Gips-Teller in Form eines Ginkgoblattes verleiht jedem Raum eine besondere Note. Perfekt für deine Lieblingsschmuckstücke oder als Dekoration. 💕",
         "image": "/img/ginkgo-teller.jpg",
@@ -287,6 +318,7 @@
         "subCategories": ["Sommer"]
       },
       {
+        "id": 32,
         "title": "Kleine Vase",
         "description": "Entdecke die stilvolle Vase, die auf Wunsch auch mit Wachs gefüllt oder als Kerzenhalter verwendet werden kann. Perfekt für ein modernes und elegantes Ambiente! 🌸✨",
         "image": "/img/kleine-vase.jpg",
@@ -296,6 +328,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 33,
         "title": "Ovale Schalenkerze",
         "description": "✨ Erlebe die Magie dieser handgefertigten Kerze, gegossen in eine wunderschöne Epoxidharz-Schale. Jede Schale ist ein Unikat und auch in einer Gipsversion mit Marmoroptik erhältlich. Perfekt, um deinem Zuhause eine besondere Atmosphäre zu verleihen! ✨",
         "image": "/img/ovale-schalenkerze.jpg",
@@ -305,6 +338,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 34,
         "title": "Sommerliche Schalenkerze",
         "description": "🌿🌸 Sommerliche Dekoration im Grünton! Diese handgefertigte Gips-Schale wurde mit Wachs gefüllt und liebevoll mit zwei wunderschönen Blüten verziert. Ein echter Hingucker auf jedem Tisch. 🌸🌿",
         "image": "./img/sommerliche-schalenkerze.jpg",
@@ -314,6 +348,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 35,
         "title": "Herz-Bubble",
         "description": "Verliebt in Blau 💙✨ Die handgefertigte Herz-Bubblekerze zaubert Farbe und Gemütlichkeit. Perfekt für romantische Abende oder einfach zum Entspannen. 💫",
         "image": "/img/herz-bubble.jpg",
@@ -323,6 +358,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
+        "id": 36,
         "title": "Paar-Kerze",
         "description": "Liebe kennt keine Jahreszeit. Diese zarte Umarmung in Kerzenform erinnert uns daran, dass wir unsere Gefühle täglich ausdrücken können. Warte nicht auf den Valentinstag – zeige deine Liebe, wann immer dir danach ist. 🕯️❤️",
         "image": "/img/paar-kerze.jpg",
@@ -332,6 +368,7 @@
         "subCategories": ["Standkerzen","Figuren","Valentinstag"]
       },
       {
+        "id": 37,
         "title": "Kissen-Bubble (kein Set)",
         "description": "Entspannung pur: Diese Kerze sieht nicht nur aus wie ein kuscheliges Kissen, sondern verbreitet auch noch einen herrlichen Duft. Perfekt für gemütliche Abende zuhause! 🕯️💕 Kissen-Bubblekerze 🧘‍♂️🧘",
         "image": "/img/kissen-bubble.jpg",
@@ -341,7 +378,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
-        "id": 37,
+        "id": 38,
         "title": "Buch-Kerze",
         "description": "Lesen beim Kerzenschein war noch nie so stilvoll! 📚🕯️ Diese einzigartige Buchkerze bringt die Magie der Literatur in dein Zuhause. Perfekt für alle, die Bücher lieben und ihre Leseecke mit einem besonderen Licht erhellen möchten.",
         "image": "/img/buch-kerze.jpg",
@@ -351,6 +388,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
+        "id": 39,
         "title": "Knoten",
         "description": "Ein echter Hingucker: Diese Knotenkerze verbindet Kunst und Gemütlichkeit. 🕯️💫",
         "image": "/img/knoten.jpg",
@@ -360,6 +398,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
+        "id": 40,
         "title": "Kleines Geschenk",
         "description": "Eine kleine Kerze in Form eines Geschenks, die große Freude bringt! Perfekt, um jedem Moment einen Hauch von Magie zu verleihen. 🎁🕯️✨ ",
         "image": "/img/kleines-geschenk.jpg",
@@ -369,6 +408,7 @@
         "subCategories": ["Standkerzen","Figuren","Winter/Weihnachten"]
       },
       {
+        "id": 41,
         "title": "Weltkugel",
         "description": "🌍🕯️ Bringe die Welt in dein Zuhause mit der handgemachten Erdkugel-Kerze! 🕯️🌍Diese beeindruckende Kerze in Form einer dreidimensionalen Erdkugel verleiht deinem Raum eine stilvolle und globale Atmosphäre. Mit ihren feinen Details und dem sanften Licht ist sie perfekt für Reisebegeisterte und Weltenbummler. Lass das warme Leuchten dieser Erdkugel-Kerze dein Zuhause erhellen und von fernen Ländern und Abenteuern träumen. ✨",
         "image": "/img/weltkugel.jpg",
@@ -378,6 +418,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
+        "id": 42,
         "title": "Bogenkerze",
         "description": "🌈✨ Entdecke die Magie der Farben mit der Bogenkerze in ihrem neuen, bezaubernden Glanz! Sie bringt nicht nur Licht, sondern auch Freude und ein bisschen Zauber in dein Zuhause. Lass dich von ihrer Vielfalt verzaubern! 🕯️🌟 ",
         "image": "/img/bogenkerze.jpg",
@@ -387,6 +428,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
+        "id": 43,
         "title": "Buddha",
         "description": "Finde innere Ruhe und Gelassenheit mit der handgefertigten Buddha-Kerze 🕯️🙏 Perfekt für meditative Momente oder als liebevolles Geschenk. ",
         "image": "/img/buddha.jpg",
@@ -396,6 +438,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
+        "id": 44,
         "title": "Kleine Bubble (kein Set)",
         "description": "Die kleine Bubblekerze mit wunderschönem Farbverlauf 🌈✨",
         "image": "/img/kleine-bubble.jpg",
@@ -405,6 +448,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
+        "id": 45,
         "title": "Herz in Händen",
         "description": "💖🕯️ Zeige deine Liebe mit der wunderschönen Herz-Kerze in Händen! 🕯️💖Diese kunstvoll gestaltete Kerze, die ein liebevoll umschlossenes Herz darstellt, bringt Wärme und Zuneigung in jeden Raum. Die feinen Details und das zarte Design machen sie zu einem perfekten Geschenk für besondere Anlässe oder einfach, um jemandem zu zeigen, wie sehr man ihn schätzt. ✨",
         "image": "/img/herz-in-händen.jpg",
@@ -414,6 +458,7 @@
         "subCategories": ["Standkerzen","Figuren","Valentinstag"]
       },
       {
+        "id": 46,
         "title": "Kariertes Herz",
         "description": "Ein Hauch von grünem Tee in Herzform - die perfekte Kerze für entspannte Momente. 💚🍵",
         "image": "/img/kariertes-herz.jpg",
@@ -423,6 +468,7 @@
         "subCategories": ["Standkerzen","Figuren","Valentinstag"]
       },
       {
+        "id": 47,
         "title": "Astronaut",
         "description": "Hier kommt eine weitere Variation der beliebten Astronauten-Kerze! 🕯🚀 Diese bezaubernde Kerze zeigt einen niedlichen Astronauten, der auf dem Mond sitzt. Mit liebevollen Details wie den kleinen Kopfhörern und den roten Streifen an seinem Anzug ist sie ein echtes Highlight für alle Weltraum-Fans. Perfekt zum Verschenken oder selbst genießen! 🌙✨",
         "image": "/img/astronaut.jpg",
@@ -432,6 +478,7 @@
         "subCategories": ["Standkerzen","Figuren"]
       },
       {
+        "id": 48,
         "title": "Engelsflügel",
         "description": "Schaffe eine himmlische Atmosphäre mit diesem bezaubernden Teelichthalter aus Engelsflügeln, die ein Herz formen. Perfekt für romantische Abende oder als besondere Deko. ✨💖",
         "image": "/img/engelsfluegel.jpg",
@@ -441,6 +488,7 @@
         "subCategories": ["Teelichthalter/Döschen"]
       },
       {
+        "id": 49,
         "title": "Lotushalter (kein Set)",
         "description": "🌸🕯️Schaffe eine Atmosphäre der Ruhe und Gelassenheit in deinem Zuhause mit dem handgemachten Lotus-Teelichthalter in Marmoroptik 🕯️🌸Dieser wunderschöne Kerzenhalter in Form einer Lotusblüte bietet eine stilvolle und beruhigende Präsentation für ein Teelicht. So wird dein Wohnzimmer zu einer Oase der Entspannung ✨💕",
         "image": "/img/lotushalter.jpg",
@@ -450,6 +498,7 @@
         "subCategories": ["Teelichthalter/Döschen"]
       },
       {
+        "id": 50,
         "title": "Herzhalter",
         "description": "Dieser herzförmige Teelichthalter trägt das Wort 'LOVE' und kann individuell mit Sprüchen, Namen oder Bildern gestaltet werden. Die kleinen Unperfektheiten machen ihn zu etwas ganz Besonderem. So bringst du ein bisschen Extra-Liebe und Charakter in dein Zuhause. ✨❤️",
         "image": "/img/herzhalter.jpg",
@@ -459,6 +508,7 @@
         "subCategories": ["Teelichthalter/Döschen","Valentinstag"]
       },
       {
+        "id": 51,
         "title": "Bubblehalter",
         "description": "Tauche ein in die Welt der Eleganz mit dem einzigartigen Teelichthalter in Marmoroptik 🕯️✨ Ideal, um deinem Zuhause einen Hauch von Luxus und Gemütlichkeit zu verleihen.",
         "image": "/img/bubblehalter.jpg",
@@ -468,6 +518,7 @@
         "subCategories": ["Teelichthalter/Döschen"]
       },
       {
+        "id": 52,
         "title": "Kissenhalter",
         "description": "✨ Dieser Teelichthalter in Kissenform zaubert Gemütlichkeit in jeden Raum und lädt zum Träumen ein. Perfekt für entspannte Stunden und kuschelige Abende. 💭",
         "image": "/img/kissenhalter.jpg",
@@ -477,6 +528,7 @@
         "subCategories": ["Teelichthalter/Döschen"]
       },
       {
+        "id": 53,
         "title": "Klassikhalter",
         "description": "Ein kleines Meisterwerk in Marmoroptik – dieser Teelichthalter zaubert im Handumdrehen eine stilvolle Atmosphäre. 🌟 Klassisch, elegant und einfach unwiderstehlich! ",
         "image": "/img/klassikhalter.jpg",
@@ -486,6 +538,7 @@
         "subCategories": ["Teelichthalter/Döschen"]
       },
       {
+        "id": 54,
         "title": "Little Rosie",
         "description": "Ein kleines Licht, das von Herzen kommt. Manchmal sind die einfachsten Geschenke die schönsten. 💕✨ Little Rosie 💝 ",
         "image": "/img/little-rosie.jpg",
@@ -495,6 +548,7 @@
         "subCategories": ["Standkerzen","Blumen","Valentinstag"]
       },
       {
+        "id": 55,
         "title": "Big Rosie",
         "description": "Begrüßt die zauberhafte Big-Rosie-Kerze! 🌹✨ Ein echtes Meisterwerk, das jedes Herz erobert. Die kleine Rose dient nur zum Größenvergleich, denn die Big-Rosie stiehlt jedem die Show. Perfekt für magische Momente und unvergessliche Geschenke. 🕯️❤️",
         "image": "/img/big-rosie.jpg",
@@ -504,6 +558,7 @@
         "subCategories": ["Standkerzen","Blumen","Valentinstag"]
       },
       {
+        "id": 56,
         "title": "Rosenteddy",
         "description": "Warum immer rote Rosen? Diese Teddy-Kerze aus blauen Rosen bringt frischen Wind in jede Deko! 🧸✨ ",
         "image": "/img/rosenteddy.jpg",
@@ -513,6 +568,7 @@
         "subCategories": ["Standkerzen","Blumen","Valentinstag"]
       },
       {
+        "id": 57,
         "title": "Rosenblüte (kein Set)",
         "description": "Wie wäre es mit einer Rosenblüte als Kerze? 🌹✨ Die handgefertigten Schönheiten bringen Licht und Eleganz in jeden Raum. Erhältlich in verschiedenen Farben.",
         "image": "/img/rosenblüte.jpg",
@@ -522,6 +578,7 @@
         "subCategories": ["Standkerzen","Blumen","Valentinstag"]
       },
       {
+        "id": 58,
         "title": "schlichte Kerze",
         "description": "Erlebe die perfekte Kombination aus Design und Duft! 🕯️✨ Die neue Kerze mit einzigartigem geometrischen Muster bringt Stil und Gemütlichkeit in dein Zuhause. 🌿💫",
         "image": "/img/schlichte-kerze.jpg",
@@ -531,6 +588,7 @@
         "subCategories": ["Standkerzen","schlichte Schönheiten"]
       },
       {
+        "id": 59,
         "title": "Karo Kerze",
         "description": "Schönheit liegt in der Einfachheit: Die Schlichte Karo Kerze zeigt, wie beeindruckend schlichtes Design sein kann. Im sommerlichen Grün wirkt sie zeitlos und elegant. 🌿🕯️",
         "image": "/img/karo-kerze.jpg",
@@ -540,6 +598,7 @@
         "subCategories": ["Standkerzen","schlichte Schönheiten"]
       },
       {
+        "id": 60,
         "title": "Kegel Kerze",
         "description": "Entdecke die zeitlose Schönheit dieser neuen Kerze, die moderne Ästhetik in dein Zuhause bringt. Ihre raffinierte Form und sanfte Farbgebung schaffen eine beruhigende Atmosphäre und verleihen jedem Raum einen Hauch von Stil. Ein Muss für gemütliche Abende und besondere Momente. 🕯️✨",
         "image": "/img/kegel-kerze.jpg",
@@ -549,6 +608,7 @@
         "subCategories": ["Standkerzen","schlichte Schönheiten"]
       },
       {
+        "id": 61,
         "title": "Gerippte Kerze",
         "description": "Verwandle dein Zuhause in eine Oase der Entspannung mit der exquisiten, gerippten Kerze 🕯️🌿 Ihr warmes Licht und elegantes Design schaffen eine Atmosphäre zum Wohlfühlen und Träumen. Ob als stilvolle Dekoration oder für romantische Abende – diese Kerze ist ein wahrer Blickfang. Lass dich von ihrem sanften Schein verzaubern. 💫",
         "image": "/img/gerippte-kerze.jpg",
@@ -558,6 +618,7 @@
         "subCategories": ["Standkerzen","schlichte Schönheiten"]
       },
       {
+        "id": 62,
         "title": "Wellenförmige Kerze",
         "description": "Eleganz in Einfachheit: Diese wellenförmige Kerze bringt Ruhe und Stil in jeden Raum. 🌊🕯️ Erhältlich in verschiedenen Farben und Düften für jeden Geschmack.",
         "image": "/img/wellenförmige-kerze.jpg",
@@ -567,6 +628,7 @@
         "subCategories": ["Standkerzen","schlichte Schönheiten"]
       },
       {
+        "id": 63,
         "title": "Geburtstagskerze",
         "description": "Eine besondere Geburtstagskerze mit Gänseblümchen 🌼✨ Perfekt für einen unvergesslichen Tag! ",
         "image": "/img/geburtstagskerze.jpg",
@@ -576,6 +638,7 @@
         "subCategories": ["Personalisierungen"]
       },
       {
+        "id": 64,
         "title": "Personalisierte Kerze",
         "description": "Eine Kerze voller Liebe und Gänseblümchen für jemanden ganz Besonderen 🌼🕯️",
         "image": "/img/personalisierte-kerze.jpg",
@@ -585,6 +648,7 @@
         "subCategories": ["Personalisierungen"]
       },
       {
+        "id": 65,
         "title": "Glühweinkerze",
         "description": "Selbstgemacht und voller Weihnachtszauber: Meine Glühweinkerze! 🕯️✨ Der Duft nach Apfel und Zimt bringt den Weihnachtsmarkt direkt ins Wohnzimmer. Was darf bei euch in der Weihnachtszeit nicht fehlen?",
         "image": "/img/glühweinkerze.jpg",
@@ -594,6 +658,7 @@
         "subCategories": ["Winter/Weihnachten"]
       },
       {
+        "id": 66,
         "title": "Triple Heart",
         "description": "✨ Romantik in Kunst gegossen ✨Ein einzigartiger Epoxidharz-Teelichthalter mit drei ineinander verschlungenen Herzen – perfekt, um eine warme und liebevolle Atmosphäre zu schaffen. Ob als Geschenk oder als Highlight für dein Zuhause, dieser Hingucker sorgt für magische Lichtmomente. ❤️🕯️",
         "image": "/img/triple-heart.jpg",
@@ -603,6 +668,7 @@
         "subCategories": ["Valentinstag"]
       },
       {
+        "id": 67,
         "title": "Osterset",
         "description": "Osterzauber mit stilvollem Kerzenlicht ✨🐣 Diese handgefertigten Epoxidharz-Gefäße sind im Set erhältlich und bringen eine gemütliche Atmosphäre in dein Zuhause. Perfekt für die Osterzeit und darüber hinaus! 🕯️🌿",
         "image": "/img/osterset.jpg",
@@ -612,6 +678,7 @@
         "subCategories": ["Ostern"]
       },
       {
+        "id": 68,
         "title": "You & Me -Kerze",
         "description": "Unendliche Wärme, unendliche Liebe. ✨🕯️ Dieses einzigartige Infinity-Gefäß aus Epoxidharz, gefüllt mit duftendem Wachs, bringt nicht nur Licht, sondern auch Romantik in jeden Moment. ❤️ ",
         "image": "/img/youandme-kerze.jpg",
@@ -621,6 +688,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse","Valentinstag"]
       },
       {
+        "id": 69,
         "title": "Segel",
         "description": "Setz die Segel für Gemütlichkeit! ⚓✨ Dieser Teelichthalter mit Wechselmotiv bringt nicht nur Licht, sondern auch maritimen Charme in dein Zuhause. Welches Motiv passt zu deiner Stimmung? ⛵🔥",
         "image": "/img/segel.jpg",
@@ -630,6 +698,7 @@
         "subCategories": []
       },
       {
+        "id": 70,
         "title": "Anker",
         "description": "Setz den Anker oder wechsel das Motiv – ganz nach deiner Stimmung! ⚓✨ Dieser einzigartige Teelichthalter mit austauschbarem Design bringt maritimen Flair und stimmungsvolles Licht in dein Zuhause. Welches Motiv würde bei dir leuchten? 🔥",
         "image": "/img/anker.jpg",
@@ -639,6 +708,7 @@
         "subCategories": []
       },
       {
+        "id": 71,
         "title": "Blütenzauber",
         "description": "Blütenzauber trifft Entspannung ✨🌿 Diese wunderschöne, handgefertigte Kerze in einer Epoxidharz-Badewanne bringt Spa-Vibes direkt zu dir nach Hause! 🛁🌸 Perfekt für gemütliche Abende und entspannende Momente. Wer liebt auch florale Deko? 💜💛",
         "image": "/img/bluetenzauber.jpg",
@@ -648,6 +718,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 72,
         "title": "Löffeleier Set",
         "description": "Frühlingszauber trifft Osterfreude! 🌸🐰 Diese süßen Hasenkerzen sind das perfekte Highlight für deine Frühlingsdeko. Welche Farbe würdest du dir wünschen? 💕✨",
         "image": "/img/loeffeleier-set.jpg",
@@ -657,6 +728,7 @@
         "subCategories": ["Stankerzen","Figuren","Ostern"]
       },
       {
+        "id": 73,
         "title": "Kerzenstrauß",
         "description": "Ein Strauß, der für immer bleibt! ✨ Diese handgegossenen Blumenkerzen bringen warmes Licht und stilvolle Deko in jeden Raum. Die Keramikvase ist ebenfalls selbstgemacht – ein echtes Unikat! 🌿🕯️",
         "image": "/img/kerzenstrauss.jpg",
@@ -666,6 +738,7 @@
         "subCategories": ["Stankerzen","Blumen","Sommer"]
       },
       {
+        "id": 74,
         "title": "Kerzen - Pilz",
         "description": "Direkt aus dem Feenwald zu dir nach Hause! 🍄✨ Diese handgegossene Kerze verbirgt sich in einem schimmernden Pilz-Behälter aus Epoxidharz – wie ein kleines Geheimnis aus einer anderen Welt. Perfekt für magische Momente und gemütliche Abende! 🕯️🌿",
         "image": "/img/kerzen-pilz.jpg",
@@ -675,6 +748,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse","Sommer"]
       },
       {
+        "id": 75,
         "title": "Osterdöschen",
         "description": "Kunst trifft Funktion ✨ Dieses handgefertigte Döschen aus glänzendem Epoxidharz ist nicht nur ein echter Hingucker – auf Wunsch wird es zur stilvollen Kerze mit individuellem Duft 🕯️Jedes Stück ist ein Unikat 🖤 Perfekt als Geschenk oder als besonderer Akzent für dein Zuhause 🏡",
         "image": "/img/osterdoeschen.jpg",
@@ -684,6 +758,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse","Ostern"]
       },
       {
+        "id": 76,
         "title": "Seifenspender",
         "description": "Dieser selbstgemachte Seifenspender aus Epoxidharz bringt Glanz, Glam & ganz viel Persönlichkeit ins Spiel! Wer sagt, dass Alltagsgegenstände langweilig sein müssen? ✨🧼💫",
         "image": "/img/seifenspender.jpg",
@@ -693,6 +768,7 @@
         "subCategories": []
       },
       {
+        "id": 77,
         "title": "Muschelwürfel",
         "description": "Ein Hauch von Meer in deinem Zuhause 🌊 Diese handgegossene Kerze 🕯️ steckt in einem liebevoll gestalteten Döschen aus Epoxidharz – verziert mit echten kleinen Muscheln 🐚 und einem passenden Deckel. Perfekt für entspannte Abende oder als besonderes Deko-Highlight.",
         "image": "/img/muschelwuerfel.jpg",
@@ -702,6 +778,7 @@
         "subCategories": ["Becherkerzen","gefüllte Behältnisse"]
       },
       {
+        "id": 78,
         "title": "Dog Heart",
         "description": "Wenn Liebe eine Form hätte… wäre sie genau das! ❤️‍🔥 Ein Herz, ein Hund, ein Licht – handgegossen aus Epoxidharz, gemacht für Seelenwärmer-Momente. 🐾🕯️ Für alle, die wissen: Zuhause ist, wo die Pfote ist.",
         "image": "/img/dog-heart.jpg",
@@ -711,6 +788,7 @@
         "subCategories": []
       },
       {
+        "id": 79,
         "title": "Froschkerze",
         "description": "Diese süße Froschkerze 🐸 ist nicht nur ein echter Hingucker – sie wurde liebevoll von Hand gegossen und bemalt 🖐️🎨! Jedes Stück ist ein kleines Unikat und bringt sofort gute Laune 🌟. Wer würde sie sich auch ins Regal stellen? 🕯️✨",
         "image": "/img/froschkerze.jpg",
@@ -720,6 +798,7 @@
         "subCategories": ["Standkerzen","Tiere"]
       },
       {
+        "id": 80,
         "title": "Muttertags Herz",
         "description": "Zum Muttertag etwas ganz Besonderes: Ein handgefertigtes Herz aus Epoxidharz ❤️ – mit Platz für euer Lieblingsfoto im Inneren! Ein einzigartiges Geschenk, das von Herzen kommt und für immer bleibt ✨📸💝",
         "image": "/img/muttertags-herz.jpg",
@@ -729,6 +808,7 @@
         "subCategories": []
       },
       {
+        "id": 81,
         "title": "Donut Dessert",
         "description": "Bunte Donut-Dessert-Kerzen 🍩🕯️ – so süß, dass man zweimal hinschauen muss! Der Docht ist raffiniert in der Sahne versteckt 🍦 – ein echter Hingucker für jede Deko! 💖",
         "image": "/img/donut-dessert.jpg",
@@ -738,6 +818,7 @@
         "subCategories": ["Becherkerzen","Dessertbecher"]
       },
       {
+        "id": 82,
         "title": "Buntes Lesezeichen",
         "description": "Bunte Lesezeichen aus Epoxidharz ✨📚 Jedes Stück ist ein handgemachtes Unikat – in vielen Farben erhältlich! Perfekt für dein Lieblingsbuch oder als liebevolles Geschenk 🎁💖 Welches ist dein Favorit?",
         "image": "/img/buntes-lesezeichen.jpg",
@@ -745,6 +826,76 @@
         "mass": "14 cm x 2,5 cm x 0,5 cm",
         "mainCategory": ["Epoxidharz"],
         "subCategories": []
+      },
+      {
+        "id": 83,
+        "title": "Tortenkerze",
+        "description": "Zum Verwechseln süß – aber kein Dessert! ✨ Diese himmelblaue Tortenkreation mit Macarons, Beeren und Blättern sieht zum Anbeißen aus – doch sie ist eine Kerze! Die Dochte? Raffiniert versteckt… ein duftender Traum für alle Deko-Liebhaber! 🕯️🍰🫐 Übrigens: Diese Torte gibt’s auch in weiteren zauberhaften Varianten – für jeden Geschmack das passende Wachswunder!",
+        "image": "/img/tortenkerze.jpg",
+        "price": "12,00 €",
+        "mass": "10 cm x 9 cm x 10 cm",
+        "mainCategory": ["Kerzen"],
+        "subCategories": ["Becherkerzen","Dessertbecher"]
+      },
+      {
+        "id": 84,
+        "title": "Eiskaffee",
+        "description": "Sieht aus wie Eiskaffee ☕️❄️, duftet wie Eiskaffee – aber es ist eine Kerze! Unsere handgegossene Eiskaffee-Duftkerze bringt den Sommergenuss in dein Zuhause, ganz ohne Kalorien 🍦✨ Perfekt für alle Coffee-Lovers!",
+        "image": "/img/eiskaffee.jpg",
+        "price": "10,00 €",
+        "mass": "11 cm x 8 cm x 8 cm",
+        "mainCategory": ["Kerzen","Saison"],
+        "subCategories": ["Becherkerzen","Dessertbecher","Sommer"]
+      },
+      {
+        "id": 85,
+        "title": "Flämmi",
+        "description": "Ich bin Flämmi – kleiner Funke, große Wirkung! Ich schmelze Herzen, nicht nur Wachs. 🤗 Ein bisschen Magie für dein Zuhause – mit einem Lächeln und ganz viel Flamme! 🔥✨🕯️",
+        "image": "/img/flämmi.jpg",
+        "price": "8,00 €",
+        "mass": "8,5 cm x 8,5 cm x 5,5 cm",
+        "mainCategory": ["Kerzen"],
+        "subCategories": ["Standkerzen","Figuren"]
+      },
+      {
+        "id": 86,
+        "title": "Glücksdessert",
+        "description": "✨ Ein Hauch von Glück zum Anzünden ✨ Diese handgemachte Glückskerze bringt nicht nur Licht, sondern auch positive Energie in jeden Raum 🍀🕯️ Mit funkelndem Glitzer und einem vierblättrigen Kleeblatt als Symbol für Glück ist sie perfekt für kleine Auszeiten, besondere Momente oder als liebevolles Geschenk für einen Herzensmenschen.",
+        "image": "/img/gluecksdessert.jpg",
+        "price": "6,00 €",
+        "mass": "9 cm x 7,5 cm x 7,5 cm",
+        "mainCategory": ["Kerzen"],
+        "subCategories": ["Becherkerzen","Dessertbecher"]
+      },
+      {
+        "id": 87,
+        "title": "Großer Knoten",
+        "description": "🕯️ Ein Knoten aus Wachs – für besondere Momente mit Stil. Ob als Deko oder zum Entspannen bei Kerzenschein – diese besondere Kerze setzt ein Statement. ✨Schlicht, modern und einfach ein Hingucker.",
+        "image": "/img/grosser-knoten.jpg",
+        "price": "9,00 €",
+        "mass": "8 cm x 9 cm x 9 cm",
+        "mainCategory": ["Kerzen"],
+        "subCategories": ["Standkerzen","Figuren"]
+      },
+      {
+        "id": 88,
+        "title": "Glücksschwein",
+        "description": "🍀✨ Schwein gehabt! ✨🐷 Dieses süße Glücksschwein 🕯️ bringt nicht nur Licht ins Dunkel, sondern auch eine Portion Glück in dein Zuhause! 💖 Perfekt für Neuanfänge, Prüfungen oder einfach als kleiner Glücksbringer für zwischendurch! 🌟",
+        "image": "/img/gluecksschwein.jpg",
+        "price": "5,00 €",
+        "mass": "5 cm x 5 cm x 5 cm",
+        "mainCategory": ["Kerzen"],
+        "subCategories": ["Standkerzen","Tiere"]
+      },
+      {
+        "id": 89,
+        "title": "Teelicht Pfote",
+        "description": "🕯️🎨 Wenn Licht auf Fantasie trifft… Ein Teelichthalter wie kein anderer – gegossen aus Epoxidharz, geformt aus Ideen ✨Das Highlight? 🔁 Wechselbare Motive, passend zu deiner Stimmung, deinem Stil, deinem Moment. Heute Pfote 🐾, morgen Stern ⭐ – und übermorgen? Du entscheidest! Perfekt zum Träumen, Dekorieren und Staunen.",
+        "image": "/img/teelicht-pfote.jpg",
+        "price": "8,00 €",
+        "mass": "10,5 cm x 9,5 cm x 9,5 cm",
+        "mainCategory": ["Epoxidharz"],
+        "subCategories": ["Standkerzen"]
       }
     ]
 }

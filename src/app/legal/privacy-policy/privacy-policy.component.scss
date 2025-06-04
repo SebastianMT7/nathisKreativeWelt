@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 section{
-    padding: 150px 50px 50px 50px;
+    padding-top: 150px;
     position: relative;
 }
 
@@ -43,5 +43,15 @@ section{
   
     a {
       margin-left: auto;
+    }
+  }
+
+  .pripo-box {
+    @include dFlex($fd: column, $ai: flex-start);
+    padding: 0 50px 50px 50px;
+    max-width: 900px;
+  
+    @media (max-width: 600px) {
+      padding: 0 20px 20px 20px;
     }
   }

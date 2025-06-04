@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 section {
-  padding: 150px 50px 50px 50px;
+  padding-top: 150px;
   position: relative;
 }
 
@@ -15,13 +15,13 @@ section {
   right: 20px;
 
   rect {
-      stroke: $lightBlue;
-    }
+    stroke: $lightBlue;
+  }
 
-    path {
-      stroke: $lightBlue;
-      fill: $lightBlue;
-    }
+  path {
+    stroke: $lightBlue;
+    fill: $lightBlue;
+  }
 
   &:hover {
     rect {
@@ -46,6 +46,12 @@ section {
   }
 }
 
-.lorem{
-  width: 900px;
+.imprint-box {
+  @include dFlex($fd: column, $ai: flex-start);
+  padding: 0 50px 50px 50px;
+  max-width: 900px;
+
+  @media (max-width: 600px) {
+    padding: 0 20px 20px 20px;
+  }
 }
