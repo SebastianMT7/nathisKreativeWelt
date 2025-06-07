@@ -1,86 +1,89 @@
-<header>
-    <div>
-        <img class="logo" src="/icons/nathi-logo.jpg" alt="" (click)="filterByCategory('allProducts')">
-    </div>
-    <div class="dropdown-container" appClickOutside (clickOutside)="closeDropdowns()">
-        <div class="dropdown" [ngStyle]="{'position': 'static'}">
-            <nav>
-                <div (mouseenter)="openDropdown(1)" (click)="filterByCategory('Kerzen')" class="dropdown-button">
-                    <!-- <a href="#">Kerzen</a> -->
-                    <a [routerLink]="['']">Kerzen</a>
-                </div>
-            </nav>
-            <div class="container-menu" *ngIf="dropdownOpen[1]">
-                <ul>
-                    <li (click)="filterByCategory('Kerzen','Standkerzen')">Standkerzen</li>
-                    <li (click)="filterByCategory('Kerzen','Figuren')">Figuren</li>
-                    <li (click)="filterByCategory('Kerzen','Tiere')">Tiere</li>
-                    <li (click)="filterByCategory('Kerzen','Blumen')">Blumen</li>
-                    <li (click)="filterByCategory('Kerzen','schlichte Schönheiten')">schlichte Schönheiten</li>
-
-                </ul>
-                <ul>
-                    <li (click)="filterByCategory('Kerzen','Becherkerzen')">Becherkerzen</li>
-                    <li (click)="filterByCategory('Kerzen','Dessertbecher')">Dessertbecher</li>
-                    <li (click)="filterByCategory('Kerzen','gefüllte Behältnisse')">gefüllte Behältnisse</li>
-                </ul>
-                <ul>
-                    <li (click)="filterByCategory('Kerzen','Personalisierungen')">Personalisierungen</li>
-                </ul>
-            </div>
+<section>
+    <header>
+        <div>
+            <img class="logo" src="/icons/nathi-logo.jpg" alt="" (click)="filterByCategory('allProducts')">
         </div>
-        <div class="dropdown">
-            <nav>
-                <div (mouseenter)="openDropdown(2)" (click)="filterByCategory('Epoxidharz')" class="dropdown-button">
-                    <!-- <a href="#">Epoxidharz</a> -->
-                    <a [routerLink]="['']">Epoxidharz</a>
+        <div class="dropdown-container" appClickOutside (clickOutside)="closeDropdowns()">
+            <div class="dropdown" [ngStyle]="{'position': 'static'}">
+                <nav>
+                    <div (mouseenter)="openDropdown(1)" (click)="filterByCategory('Kerzen')" class="dropdown-button">
+                        <!-- <a href="#">Kerzen</a> -->
+                        <a [routerLink]="['']">Kerzen</a>
+                    </div>
+                </nav>
+                <div class="container-menu" *ngIf="dropdownOpen[1]">
+                    <ul>
+                        <li (click)="filterByCategory('Kerzen','Standkerzen')">Standkerzen</li>
+                        <li (click)="filterByCategory('Kerzen','Figuren')">Figuren</li>
+                        <li (click)="filterByCategory('Kerzen','Tiere')">Tiere</li>
+                        <li (click)="filterByCategory('Kerzen','Blumen')">Blumen</li>
+                        <li (click)="filterByCategory('Kerzen','schlichte Schönheiten')">schlichte Schönheiten</li>
+
+                    </ul>
+                    <ul>
+                        <li (click)="filterByCategory('Kerzen','Becherkerzen')">Becherkerzen</li>
+                        <li (click)="filterByCategory('Kerzen','Dessertbecher')">Dessertbecher</li>
+                        <li (click)="filterByCategory('Kerzen','gefüllte Behältnisse')">gefüllte Behältnisse</li>
+                    </ul>
+                    <ul>
+                        <li (click)="filterByCategory('Kerzen','Personalisierungen')">Personalisierungen</li>
+                    </ul>
                 </div>
-            </nav>
-            <!-- <ul *ngIf="dropdownOpen[2]" class="dropdown-menu">
+            </div>
+            <div class="dropdown">
+                <nav>
+                    <div (mouseenter)="openDropdown(2)" (click)="filterByCategory('Epoxidharz')"
+                        class="dropdown-button">
+                        <!-- <a href="#">Epoxidharz</a> -->
+                        <a [routerLink]="['']">Epoxidharz</a>
+                    </div>
+                </nav>
+                <!-- <ul *ngIf="dropdownOpen[2]" class="dropdown-menu">
                     <li (click)="filterByCategory('Epoxidharz','Figuren')">Figuren</li>
                     <li (click)="filterByCategory('Epoxidharz','Schalen/Untersetzer')">Schalen/Untersetzer</li>
                     <li (click)="filterByCategory('Epoxidharz','Uhren')">Uhren</li>
                     <li (click)="filterByCategory('Epoxidharz','Sonstiges')">Sonstiges</li>
                     <li (click)="filterByCategory('Epoxidharz','Personalisierungen')">Personalisierungen</li>
                 </ul> -->
-        </div>
-        <div class="dropdown">
-            <nav>
-                <div (mouseenter)="openDropdown(3)" (click)="filterByCategory('Keramik')" class="dropdown-button">
-                    <a href="#">Keramik</a>
-                </div>
-            </nav>
-            <ul *ngIf="dropdownOpen[3]" class="dropdown-menu">
-                <li (click)="filterByCategory('Keramik','Teelichthalter/Döschen')">Teelichthalter/Döschen</li>
-                <!-- <li (click)="filterByCategory('Keramik','Schalen/Untersetzer')">Schalen/Untersetzer</li>
+            </div>
+            <div class="dropdown">
+                <nav>
+                    <div (mouseenter)="openDropdown(3)" (click)="filterByCategory('Keramik')" class="dropdown-button">
+                        <a href="#">Keramik</a>
+                    </div>
+                </nav>
+                <ul *ngIf="dropdownOpen[3]" class="dropdown-menu">
+                    <li (click)="filterByCategory('Keramik','Teelichthalter/Döschen')">Teelichthalter/Döschen</li>
+                    <!-- <li (click)="filterByCategory('Keramik','Schalen/Untersetzer')">Schalen/Untersetzer</li>
                     <li (click)="filterByCategory('Keramik','Sonstiges')">Sonstiges</li> -->
-            </ul>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <nav>
+                    <div (mouseenter)="openDropdown(4)" (click)="filterByCategory('Saison')" class="dropdown-button">
+                        <a href="#">Saison</a>
+                    </div>
+                </nav>
+                <ul *ngIf="dropdownOpen[4]" class="dropdown-menu">
+                    <li (click)="filterByCategory('Saison','Valentinstag')">Valentinstag</li>
+                    <li (click)="filterByCategory('Saison','Ostern')">Ostern</li>
+                    <li (click)="filterByCategory('Saison','Sommer')">Sommer</li>
+                    <li (click)="filterByCategory('Saison','Herbst/Halloween')">Herbst/Halloween</li>
+                    <li (click)="filterByCategory('Saison','Winter/Weihnachten')">Winter/Weihnachten</li>
+                </ul>
+            </div>
         </div>
-        <div class="dropdown">
-            <nav>
-                <div (mouseenter)="openDropdown(4)" (click)="filterByCategory('Saison')" class="dropdown-button">
-                    <a href="#">Saison</a>
-                </div>
-            </nav>
-            <ul *ngIf="dropdownOpen[4]" class="dropdown-menu">
-                <li (click)="filterByCategory('Saison','Valentinstag')">Valentinstag</li>
-                <li (click)="filterByCategory('Saison','Ostern')">Ostern</li>
-                <li (click)="filterByCategory('Saison','Sommer')">Sommer</li>
-                <li (click)="filterByCategory('Saison','Herbst/Halloween')">Herbst/Halloween</li>
-                <li (click)="filterByCategory('Saison','Winter/Weihnachten')">Winter/Weihnachten</li>
-            </ul>
+
+        <div class="burger-menu" [class.d-none]="productService.menuOpen" (click)="toggleSidebar()">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 2H31" stroke="lightBlue" stroke-width="3" stroke-linecap="round" />
+                <path d="M1 16H31" stroke="lightBlue" stroke-width="3" stroke-linecap="round" />
+                <path d="M1 30H31" stroke="lightBlue" stroke-width="3" stroke-linecap="round" />
+            </svg>
         </div>
-    </div>
+    </header>
 
-    <div class="burger-menu" [class.d-none]="productService.menuOpen" (click)="toggleSidebar()">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 2H31" stroke="lightBlue" stroke-width="3" stroke-linecap="round" />
-            <path d="M1 16H31" stroke="lightBlue" stroke-width="3" stroke-linecap="round" />
-            <path d="M1 30H31" stroke="lightBlue" stroke-width="3" stroke-linecap="round" />
-        </svg>
-    </div>
-</header>
-
-@if (productService.menuOpen) {
+    @if (productService.menuOpen) {
     <app-sidebar (categorySelected)="productService.filterProducts($event)"></app-sidebar>
     }
+</section>

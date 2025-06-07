@@ -1,11 +1,11 @@
 @import "../../../styles.scss";
 
 .card {
-    @include dFlex($fd: column,$ai: unset, $gap: 10px);
+    @include dFlex($fd: column, $ai: unset, $gap: 10px);
     width: 200px;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         //background-color: $lightBlue;
         //border-radius: 20px;
         //scale: 1.05;
@@ -20,9 +20,9 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 20px;
+        border-radius: 10px;
 
-        &:hover{
+        &:hover {
             scale: 1.05;
         }
     }
@@ -31,7 +31,7 @@
 .info {
     @include dFlex($fd: column, $ai: flex-start, $gap: 5px);
 
-    .mass-div{
+    .mass-div {
         @include dFlex($jc: flex-end, $ai: flex-start, $gap: 5px);
     }
 }
@@ -53,7 +53,9 @@
     max-width: 500px;
     border-radius: 20px;
     padding: 20px;
-    h2{
+
+    h2 {
+        color: $middleBlue;
         padding-bottom: 10px;
     }
 }
@@ -77,11 +79,13 @@
 
 .img-div-detail {
     max-width: 500px;
-   // max-height: 500px;
+    // max-height: 500px;
     aspect-ratio: 1/1;
     //padding: 0 15px;
+    overflow: hidden;
 
     img {
+        border-radius: 15px;
         width: 100%;
         height: 100%;
         object-fit: cover;

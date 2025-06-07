@@ -3,19 +3,28 @@
 .diashow-container {
     position: relative;
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
 
     &:hover {
         .controls svg {
             display: flex;
         }
     }
+
+
 }
 
 .diashow-image {
     width: 100%;
     height: 400px; // Oder eine andere feste Höhe, falls gewünscht
     object-fit: cover; // Das Bild füllt den Container, ohne das Seitenverhältnis zu verzerren
+
+        @media (max-width: 500px) {
+        height: 300px
+    }
+            @media (max-width: 400px) {
+        height: 200px
+    }
 }
 
 .controls {
@@ -38,8 +47,8 @@
     svg {
         display: none;
         width: 20px;
-        
-        path{
+
+        path {
             fill: $darkBlue;
         }
     }
@@ -52,7 +61,7 @@
         svg {
             //scale: 1.2;
 
-            path{
+            path {
                 fill: $middleBlue;
             }
         }

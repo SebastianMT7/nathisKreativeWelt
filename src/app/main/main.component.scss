@@ -1,40 +1,49 @@
 @import "../../styles.scss";
 
-.content{
-    @include dFlex($fd: column,$ai: initial);
+.content {
+    @include dFlex($fd: column, $ai: initial);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media(min-width: 1920px) {
+        max-width: 1920px;
+    }
 }
 
-section {
-    @include dFlex($ai: center,$jc: flex-start, $gap: 25px);
-    //display: flex;
-    //gap: 30px;
+.product-list {
+    @include dFlex($gap: 25px);
     flex-wrap: wrap;
     max-width: 100%;
-    padding: 20px 50px;
+    padding: 20px 20px;
     overflow-x: hidden;
 }
 
-.welcome-text{
+.welcome-text {
     @include dFlex();
-    padding: 20px 0 30px 0;
+    padding: 20px;
     color: $lightBlue;
-    div{
-        @include dFlex($fd: column, $gap: 5px);         
+
+    div {
+        @include dFlex($fd: column, $gap: 5px);
     }
 
-    h2 {
-       // text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
-    }
+    @media (max-width: 500px) {
+        font-size: 12px;
 
-    img {
-        height: 16px;
+        h2 {
+            font-size: 16px;
+        }
+
     }
 }
 
-app-single-product{    
-    height: 300px;
-}
+// app-single-product {
+//     min-height: 280px;
+// }
 
-app-slideshow {
-    margin-top: 100px;
-}
+// app-slideshow {
+//     margin-top: 100px;
+// }

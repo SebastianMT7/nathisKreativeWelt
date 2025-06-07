@@ -1,27 +1,29 @@
-<footer>
-    <div>
-        <img class="logo" src="/icons/nathi-logo.jpg" alt="">
-    </div>
-    <div>
-        <div class="imprint">
-            <a [routerLink]="['imprint']">Impressum</a>
-            <a [routerLink]="['privacy-policy']">Datenschutzrichtlinien</a>
+<section>
+    <footer>
+        <div>
+            <img class="logo" src="/icons/nathi-logo.jpg" alt="" (click)="scrollToTop()">
         </div>
-    </div>
-    <div>
-        <div class="socials">
-            <a target="_blank" href="https://www.instagram.com/natiskreativeseite/">
-                <img src="/icons/instagram-logo.png" alt="instagram logo">
-            </a>
-            <a target="_blank" href="https://uk.pinterest.com/nathis_kreative_welt/">
-                <img src="/icons/pinterest-logo.png" alt="pinterest logo">
-            </a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=61559577284362">
-                <img src="/icons/facebook-logo.png" alt="facebook logo">
-            </a>
-            <a href="mailto:n.handmade@gmx.de">
-                <img src="/icons/mail-logo.png" alt="mail logo">
-            </a>
+        <div>
+            <div class="imprint">
+                <a [routerLink]="['imprint']">Impressum</a>
+                <a [routerLink]="['privacy-policy']">Datenschutzrichtlinien</a>
+            </div>
         </div>
-    </div>
-</footer>
+        <div>
+            <div class="socials">
+                <a target="_blank" href="https://www.instagram.com/natiskreativeseite/">
+                    <img src="/icons/instagram-logo.png" alt="instagram logo">
+                </a>
+                <a target="_blank" href="https://uk.pinterest.com/nathis_kreative_welt/">
+                    <img src="/icons/pinterest-logo.png" alt="pinterest logo">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61559577284362">
+                    <img src="/icons/facebook-logo.png" alt="facebook logo">
+                </a>
+                <a href="mailto:n.handmade@gmx.de">
+                    <img src="/icons/mail-logo.png" alt="mail logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</section>

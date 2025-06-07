@@ -15,7 +15,7 @@ import { SortByNamePipe } from './pipes/sort-by-name.pipe';
 
 export class MainComponent implements OnInit {
   productService = inject(ProductsService)
-  visibleCount = signal(20); // Start mit 20 Produkten
+  //visibleCount = signal(20); // Start mit 20 Produkten
 
   constructor() { }
 
@@ -41,12 +41,12 @@ export class MainComponent implements OnInit {
   }  
 
   // Produkte auf die Anzahl beschränken
-  visibleProducts = computed(() =>
-    this.productService.filteredProducts().slice(0, this.visibleCount())
-  );
+  // visibleProducts = computed(() =>
+  //   this.productService.filteredProducts().slice(0, this.visibleCount())
+  // );
 
-  loadMoreProducts() {
-    this.visibleCount.update(count => count + 20);
-  }
+  // loadMoreProducts() {
+  //   this.visibleCount.update(count => count + 20);
+  // }
 
 }

@@ -3,13 +3,13 @@
         <img src="{{currentProduct.image}}" alt="">
     </div>
     <!-- <div class="info" [ngStyle]="{'padding-left': '20px'}"> -->
-    <div class="info" [ngStyle]="{'padding-left': '20px'}">
+    <div class="info" [ngStyle]="{'padding-left': '5px'}">
         <span>{{currentProduct.title}}</span>
         <span>Preis: {{currentProduct.price}}</span>
-        <div class="mass-div">
+        <!-- <div class="mass-div">
             <span>Maße:</span>
             <span>ca. {{currentProduct.mass}} </span>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -37,7 +37,7 @@
         </div>
         <div class="info">
             <span>Preis: {{currentProduct.price}}</span>
-            <span>Maße: {{currentProduct.mass}}</span>
+            <span>Maße: ca. {{currentProduct.mass}}</span>
             <span>{{currentProduct.description}}</span>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<div class="content">
+<section class="content">
    <app-slideshow></app-slideshow>
 
    <div class="welcome-text">
@@ -11,14 +11,13 @@
       } @else {
       <div>
          <h2>Willkommen auf meiner Seite. Schauen Sie sich gerne in Ruhe um.</h2>
-         <span>Bei Bestelllungen oder weiteren Fragen erreichen Sie mich über
-            <img src="/icons/whatsapp-logo.png" alt="whatsapp-logo"> 01775845705.</span>
-         <span>({{productService.filteredProducts().length}} Artikel)</span> <!-- wieder löschen!! -->
+         <span>Bei Bestelllungen oder weiteren Fragen erreichen Sie mich über Whatsapp: 01775845705.</span>
+         <!-- <span>({{productService.filteredProducts().length}} Artikel)</span> wieder löschen!! -->
       </div>
       }
    </div>
 
-   <section>
+   <div class="product-list">
       @for (product of productService.filteredProducts() | sortByName; track $index) {
       <app-single-product [id]="product.id" [index]="$index" [currentProduct]="product"></app-single-product>
       }
@@ -31,5 +30,5 @@
             Weitere Produkte laden
          </button>
          } -->
-   </section>
-</div>
+   </div>
+</section>
