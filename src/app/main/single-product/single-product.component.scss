@@ -53,10 +53,19 @@
     max-width: 500px;
     border-radius: 20px;
     padding: 20px;
+    margin: 20px;
+    max-height: 90vh;
 
     h2 {
         color: $middleBlue;
         padding-bottom: 10px;
+    }
+
+    span {
+        display: inline-block;
+        max-height: 200px;
+        overflow-y: auto;
+        vertical-align: top;
     }
 }
 
@@ -79,7 +88,7 @@
 
 .img-div-detail {
     max-width: 500px;
-    // max-height: 500px;
+    //max-height: 500px;
     aspect-ratio: 1/1;
     //padding: 0 15px;
     overflow: hidden;

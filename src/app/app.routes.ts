@@ -3,12 +3,14 @@ import { Routes,RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { ImprintComponent } from './legal/imprint/imprint.component';
 import { PrivacyPolicyComponent } from './legal/privacy-policy/privacy-policy.component';
+import { AgbComponent } from './legal/agb/agb.component';
 
 export const routes: Routes = [
     { path: '', component: MainComponent, title: 'Nathis kreative Welt' },
     { path: 'main', component: MainComponent },
     { path: 'imprint', component:  ImprintComponent},
-    { path: 'privacy-policy', component:  PrivacyPolicyComponent},    
+    { path: 'privacy-policy', component:  PrivacyPolicyComponent},  
+    { path: 'agb', component:  AgbComponent},  
     { path: '**', redirectTo: '', pathMatch: 'full' }, // Fallback-Route
 ];
 @NgModule({

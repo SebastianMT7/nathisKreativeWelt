@@ -1,0 +1,57 @@
+@import "../../../styles.scss";
+
+section {
+  padding-top: 150px;
+  position: relative;
+}
+
+.backBtn {
+  transform: rotate(-90deg);
+  height: 39px;
+  width: 39px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+
+  rect {
+    stroke: $lightBlue;
+  }
+
+  path {
+    stroke: $lightBlue;
+    fill: $lightBlue;
+  }
+
+  &:hover {
+    rect {
+      stroke: $middleBlue;
+    }
+
+    path {
+      stroke: $middleBlue;
+      fill: $middleBlue;
+    }
+  }
+}
+
+.posBtnBack {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 150px;
+
+  a {
+    margin-left: auto;
+  }
+}
+
+.agb-box {
+  @include dFlex($fd: column, $ai: flex-start);
+  padding: 0 50px 50px 50px;
+  max-width: 900px;
+
+//   @media (max-width: 600px) {
+//     padding: 0 20px 20px 20px;
+//   }
+}
