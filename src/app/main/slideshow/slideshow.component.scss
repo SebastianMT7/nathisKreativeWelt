@@ -1,9 +1,11 @@
 @import "../../../styles.scss";
 
 .diashow-container {
+    margin-top: 100px;
     position: relative;
     width: 100%;
     overflow: hidden;
+    object-position: center;
 
     &:hover {
         .controls svg {

@@ -6,13 +6,13 @@
       <div>
          <h2>Meine Angebote für Sie im Bereich</h2>
          <h2> {{productService.category}}</h2>
-         <span>({{productService.filteredProducts().length}} Artikel)</span>
+         <p>({{productService.filteredProducts().length}} Artikel)</p>
       </div>
       } @else {
       <div>
          <h2>Willkommen auf meiner Seite. </h2>
          <h2>Schauen Sie sich gerne in Ruhe um.</h2>
-         <span>Bei Bestelllungen oder weiteren Fragen erreichen Sie mich über Whatsapp: 01775845705.</span>
+         <p>Bei Bestelllungen oder weiteren Fragen erreichen Sie mich über Whatsapp: 01775845705.</p>
          <!-- <span>({{productService.filteredProducts().length}} Artikel)</span> wieder löschen!! -->
       </div>
       }

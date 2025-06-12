@@ -28,6 +28,11 @@
 
     div {
         @include dFlex($fd: column, $gap: 5px);
+
+        p{
+            text-align: center;
+            width:100%
+        }
     }
 
     @media (max-width: 500px) {

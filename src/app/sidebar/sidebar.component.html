@@ -9,7 +9,8 @@
 
         @for (category of categories; track $index) {
         <li class="sidebar-item" [ngStyle]="{'justify-content': category.subcategories.length > 0  ? 'space-between' : 'flex-end'}" 
-            (click)="category.subcategories.length > 0 ? selectCategory(category) : filterByCategory(category.name)">
+             (click)="handleCategoryClick(category)">
+            <!-- (click)=" category.subcategories.length > 0 ? selectCategory(category) : filterByCategory(category.name)"> -->
             @if (category.subcategories.length > 0) {
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
                 height="20px" viewBox="0 0 20 20" version="1.1">
@@ -41,7 +42,8 @@
         </li>
         @for (sub of selectedCategory?.subcategories; track $index) {
         <li class="sidebar-item" [ngStyle]="{'justify-content': sub.subcategories ? 'space-between' : 'flex-end'}" 
-            (click)="sub.subcategories ? selectSubCategory(sub) : filterByCategory(filterMainCategory,sub.name)">
+        (click)="handleSubCategoryClick(sub)">
+            <!-- (click)="sub.subcategories ? selectSubCategory(sub) : filterByCategory(filterMainCategory,sub.name)"> -->
             @if (sub.subcategories) {
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
                     height="20px" viewBox="0 0 20 20" version="1.1">
@@ -73,7 +75,8 @@
         </li>
         @for (subSub of selectedSubCategory?.subcategories; track $index) {
         <li class="sidebar-item" [ngStyle]="{'justify-content': subSub.subcategories ? 'space-between' : 'flex-end'}" 
-        (click)="subSub.subcategories ? selectSubSubCategory(subSub) : filterByCategory(filterMainCategory,subSub.name)">
+        (click)="handleSubCategoryClick(subSub)">
+        <!-- (click)="subSub.subcategories ? selectSubSubCategory(subSub) : filterByCategory(filterMainCategory,subSub.name)"> -->
             {{ subSub.name }}
         </li>
         }

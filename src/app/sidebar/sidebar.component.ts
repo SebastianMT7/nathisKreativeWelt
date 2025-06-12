@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, inject, EventEmitter, Output } from '@angular/core';
 import { ProductsService } from '../main/services/products.service';
 import { RouterLink,Router } from '@angular/router';
+import { ClickOutsideDirective } from '../main/directives/click-outside.directive';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,ClickOutsideDirective],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
@@ -122,7 +123,7 @@ export class SidebarComponent {
     console.log('mainCat:',mainCategory ,'subCat:', subCategory)
     this.categorySelected.emit({ mainCategory, subCategory }); // Korrektur: Objekt senden
     this.navigateToMain();
-    this.closeSidebar();
+    //this.closeSidebar();
   }
 
   navigateToMain() {
@@ -130,4 +131,25 @@ export class SidebarComponent {
       window.scrollTo(0, 0);
     });
   }
+
+  handleCategoryClick(category: any): void {
+  if (category.subcategories.length > 0) {
+    this.selectCategory(category);
+    this.filterByCategory(category.name)
+  } else {
+    this.filterByCategory(category.name);
+    this.closeSidebar();
+  }
+}
+
+  handleSubCategoryClick(sub: any): void {
+  if (sub.subcategories) {
+    this.selectSubCategory(sub)
+    //this.selectCategory(category);
+    this.filterByCategory(this.filterMainCategory,sub.name)
+  } else {
+    this.filterByCategory(this.filterMainCategory,sub.name)
+    this.closeSidebar();
+  }
+}
 }
